@@ -1,0 +1,3334 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+<head><script src="/oly-Almost-That-hane-Sey-a-sleepe-Atter-Macduffe" async></script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<script> if(top == self) { document.documentElement.style.display='block'}
+else { top.location = self.location; } </script>
+
+
+
+<link href="/estadisticas/series/css/ajax_upload.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/estadisticas/series/css/jquery-1.7.2.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/estadisticas/series/css/back.css?20261122001948" media="screen" rel="stylesheet" type="text/css" />
+<link href="/estadisticas/series/css/nav.css?20261122001948" media="screen" rel="stylesheet" type="text/css" />
+
+
+
+<link href="/estadisticas/series/css/series-estadisticas.css?20261122001948" media="screen" rel="stylesheet" type="text/css" />
+<link href="/estadisticas/series/css/estilo.css?20261122001948" media="screen" rel="stylesheet" type="text/css" />
+
+<!--[if lt IE 9]>
+	<link href="/estadisticas/series/css/series-estadisticas-ie.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="/estadisticas/series/css/estilo-ie.css" media="screen" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+<!--[if lte IE 8]>
+    <link href="/estadisticas/series/css/series-estadisticas-ie.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="/estadisticas/series/css/estilo-ie.css" media="screen" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+
+
+
+
+<!--[if gt IE 7]>
+	<link href="/estadisticas/series/css/series-estadisticas.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="/estadisticas/series/css/estilo.css" media="screen" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+<!--[if gte IE 8]>
+	<link href="/estadisticas/series/css/series-estadisticas.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="/estadisticas/series/css/estilo.css" media="screen" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+
+<link href="/estadisticas/series/css/tcg-elevator/css/jquery.tcg-elevator.css" media="screen" rel="stylesheet" type="text/css" />
+	
+<script type="text/javascript" src="/estadisticas/series/js/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="/estadisticas/series/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="/estadisticas/series/js/bootstrap/js/bootstrap.js"></script>
+	
+<script type="text/javascript" src="/estadisticas/series/js/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="/estadisticas/series/js/jquery.ui.core.js"></script>
+<script type="text/javascript" src="/estadisticas/series/js/jquery.ui.widget.js"></script>
+<script type="text/javascript" src="/estadisticas/series/js/ajax_upload.js" ></script>
+
+
+<script type="text/javascript" src="/estadisticas/series/js/tcg-elevator/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+	var jQuery_1_12_4 = $.noConflict(true);
+</script>
+<script type="text/javascript" src="/estadisticas/series/js/tcg-elevator/js/jquery.tcg-elevator.js"></script>
+
+<script>
+
+$(document).ready(function(){
+	//$('.tcg-elevator').tcgElevator();
+
+    if ($.fn.tcgElevator) {
+        $('.tcg-elevator').tcgElevator();
+
+
+		$('.elevator').tcgElevator({		
+			toggleSelector: '.panel-heading',
+			contentSelector: '.panel-body',
+			/*
+			speed: 500,
+			openingSpeed: 500,
+			closingSpeed: 1000,
+			*/  
+			openClass: 'open',
+			openingClass: 'opening',
+			closingClass: 'closing'
+		});
+
+    } 
+
+
+	var closed = true;
+	$('.toggle-all').click(function(e){
+		var functionToCall = closed ? 'open' : 'close';
+		closed = !closed;
+		$('.tcg-elevator').tcgElevator(functionToCall);
+	})
+	
+
+	$(".toggle-all").click(
+		function() {
+			if($(this).hasClass("cls-iconos-textos")) {
+			   $(this).removeClass("cls-iconos-textos");
+			   $(this).addClass("cls-iconos-textos-negativo");
+			} else {
+				$(this).removeClass("cls-iconos-textos-negativo");
+			    $(this).addClass("cls-iconos-textos");
+			}
+		}
+	);
+
+	
+})
+
+
+</script>
+
+
+<!-- <script type="text/javascript" src="/estadisticas/series/js/jquery.ui.datepicker_ing.js"></script> -->
+<!-- <script type="text/javascript" src="/estadisticas/series/js/jquery.ui.datepicker_esp.js"></script> -->
+
+<!-- <script type="text/javascript" src="/estadisticas/series/js/jquery.ui.datepicker.js"></script> -->
+
+<script type="text/javascript" src="/estadisticas/series/js/jquery.ui.datepicker_esp.js"></script>
+
+
+
+<script type="text/javascript" src="/estadisticas/series/js/estadisticas.js?20261122001948"></script>
+<script type="text/javascript" src="/estadisticas/series/js/js.js?20261122001948"></script>
+<script type="text/javascript" src="/estadisticas/series/js/validCampoFranz.js"></script>
+
+
+<script type="text/javascript" src="/estadisticas/series/js/funciones-personalizadas.js"></script>
+
+
+<link href="/estadisticas/series/css/font-awesome/css/font-awesome.css" media="screen" rel="stylesheet" type="text/css" />
+
+
+
+
+<script type="text/javascript" src="/estadisticas/series/js/jalert/jquery.ui.draggable.js"></script>
+<script type="text/javascript" src="/estadisticas/series/js/jalert/jquery.alerts.js"></script>
+
+
+<link href="/estadisticas/series/js/jalert/jquery.alerts.css" media="screen" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+		
+
+
+<script language="JavaScript">
+$(function() {
+	
+	    if ($('#desde').val() != undefined)
+		{	
+			$("#desde").datepicker({
+					changeMonth: true,
+					changeYear: true,
+					showOn: "button",		  
+					buttonImage: "https://estadisticas.bcrp.gob.pe/estadisticas/series/js/images/calendar.gif",
+					buttonImageOnly: true
+			});
+		}
+
+	    if ($('#hasta').val() != undefined)
+		{			
+			$("#hasta").datepicker({
+					changeMonth: true,
+					changeYear: true,
+					showOn: "button",
+					buttonImage: "https://estadisticas.bcrp.gob.pe/estadisticas/series/js/images/calendar.gif",
+					buttonImageOnly: true
+			});
+		}
+
+	    if ($('#fecha_creacion').val() != undefined)
+		{			
+			$("#fecha_creacion").datepicker({
+					changeMonth: true,
+					changeYear: true,
+					showOn: "button",
+					buttonImage: "https://estadisticas.bcrp.gob.pe/estadisticas/series/js/images/calendar.gif",
+					buttonImageOnly: true
+			});
+		}
+		
+});
+
+
+
+
+
+
+</script> 
+
+
+<script type="text/javascript">
+
+// Bloquear history
+/*history.pushState(null, null, location.href);
+    window.onpopstate = function () {
+        history.go(1);
+    };*/
+	
+</script>  
+
+
+<meta name="keywords" content="Índice General Bursátil BVL (índice)" />
+<meta name="description" content="Índice General Bursátil BVL (índice)" />
+
+<title>Índice General Bursátil BVL (índice)</title>
+</head>
+
+<script>
+	$(document).ready(function() {
+
+
+		if ($('#txtbuscador').val() != undefined) {
+			$('#txtbuscador').validCampoFranz(' abcdefghijklmnñopqrstuvwxyzáéíóú$1234567890');
+		}
+
+
+		//$('#txtbuscar').on( 'keyup change', function () {   // for text boxes
+		$('#txtbuscador').on('keypress', function(event) { // for text boxes
+
+
+
+			if (event.which == 13) {
+				v = $("#txtbuscador").val();
+
+				if (v != '') {
+
+					var filtropalabras = /^[0-9a-zA-Z$áéíóúñ ]+$/;
+					// utilizamos test para comprobar si el parametro valor cumple la regla
+					if (!filtropalabras.test(v)) {
+						alert('La texto a buscar contiene un caracter no permitido.');
+						return false;
+					}
+
+
+
+					//dataTable.search(v).draw();
+					//document.frmBuscador.action ="/estadisticas/series/diarias/resultados/PD38026MD/html/2021-01-01/2021-12-31";
+					document.frmBuscador.action = "https://estadisticas.bcrp.gob.pe/estadisticas/series/buscador";
+					document.frmBuscador.submit();
+
+				} else {
+					alert('Ingresar texto a buscar');
+					return false;
+				}
+			}
+
+			//dataTable.search( $(this).val() ).draw();
+
+		});
+
+
+		$('#btnbuscador').on('click', function(event) { // for text boxes
+
+
+
+			v = $("#txtbuscador").val();
+
+			if (v != '') {
+
+
+				var filtropalabras = /^[0-9a-zA-Z$áéíóúñ ]+$/;
+				// utilizamos test para comprobar si el parametro valor cumple la regla
+				if (!filtropalabras.test(v)) {
+					alert('La texto a buscar contiene un caracter no permitido.');
+					return false;
+				}
+
+
+				dataTable.search(v).draw();
+
+				//document.frmBuscador.action ="/estadisticas/series/diarias/resultados/PD38026MD/html/2021-01-01/2021-12-31";
+				document.frmBuscador.action = "https://estadisticas.bcrp.gob.pe/estadisticas/series/buscador";
+				document.frmBuscador.submit();
+
+			} else {
+				alert('Ingresar texto a buscar');
+				return false;
+			}
+
+			//dataTable.search( $(this).val() ).draw();
+
+		});
+
+
+	});
+</script>
+
+
+
+
+<body>
+
+
+
+
+
+	<!-- Google Tag Manager -->
+
+	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-T2QFRJ"
+
+			height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+	<script>
+		(function(w, d, s, l, i) {
+			w[l] = w[l] || [];
+			w[l].push({
+				'gtm.start':
+
+					new Date().getTime(),
+				event: 'gtm.js'
+			});
+			var f = d.getElementsByTagName(s)[0],
+
+				j = d.createElement(s),
+				dl = l != 'dataLayer' ? '&l=' + l : '';
+			j.async = true;
+			j.src =
+
+				'//www.googletagmanager.com/gtm.js?id=' + i + dl;
+			f.parentNode.insertBefore(j, f);
+
+		})(window, document, 'script', 'dataLayer', 'GTM-T2QFRJ');
+	</script>
+
+	<!-- End Google Tag Manager -->
+
+
+	<script>
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-83099512-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+
+
+
+
+
+	
+			<div class="header">
+
+				<div class="textocabecera">
+					<div class="logocbm">
+						<a href="http://www.bcrp.gob.pe" target="_blank"><img alt="" src="/estadisticas/series/images/logo-70-espacio.png" id="logobcr"></a>
+					</div>
+					<div class="logoytitulo">
+						<!-- <div class="titlogobcrp"><span class="titulobcrpdata">BCRPData</span><br/>BANCO CENTRAL DE RESERVA DEL PERÚ<br/></div> -->
+						<div class="titlogobcrp">
+							<span class="titulobcrpdata">BCRPData</span><br />
+							<span class="subtitulobcrpdata_1">BANCO CENTRAL DE RESERVA DEL PERÚ</span><br />
+							<span class="subtitulobcrpdata_2">Gerencia Central de Estudios Económicos</span>
+							<br />
+						</div>
+					</div>
+				</div>
+
+
+			
+
+			<ul class="top">
+				
+
+
+
+
+
+					<div class="hidden">
+						<h1>
+							Índice General Bursátil BVL (índice)						</h1>
+					</div>
+											<li><a title="Suscribirse" href="/estadisticas/series/suscribirse">Suscripción</a>&nbsp;|</li>
+<li><a title="Iniciar Sesión" href="/estadisticas/series/login">Iniciar Sesión</a></li>
+
+					
+
+				
+
+
+
+
+							</ul>
+
+
+
+			
+
+				<form id="frmBuscador" name="frmBuscador" action="/estadisticas/series/buscador" method="post">
+					<div class="input-group input-group-lg div-buscador">
+						<input id="txtbuscador" name="txtbuscador" type="text" class="form-control-buscador" placeholder="Buscar..." autocomplete="off" value="">
+						<span class="input-group-btn">
+							<button id="btnbuscador" name="btnbuscador" type="submit" class="btn btn-default btn-buscador-cabecera" style="background-color:#687f9f;color:white" onclick="Opciones('BU')"><i class="fa fa-search"></i></button>
+						</span>
+					</div>
+					<input type="hidden" id="accion" name="accion" value="buscar" />
+				</form>
+
+			
+
+			<div class="hidden">
+				<h1>
+					Índice General Bursátil BVL (índice)				</h1>
+			</div>
+			
+			
+			</div>
+
+			
+
+
+
+			
+<div class="menu-principal">
+	<div class="menu">
+		<ul>
+			<li><a href="/estadisticas/series/index"  target="_self">Inicio</a></li><li><a href="http://www.bcrp.gob.pe/docs/Estadisticas/Calendario-Estadisticas.pdf"  target="_blank">Calendario de Difusión</a></li><li><a href="https://www.bcrp.gob.pe/estadisticas/cuadros-de-la-nota-semanal.html"  target="_blank">Cuadros Estadísticos</a></li><li><a href="#"  target="_self">Guías</a><ul><li><a href="/estadisticas/series/documentos/bcrpdataguiadeuso.pdf"  target="_blank">Uso de BCRPData</a></li><li><a href="/estadisticas/series/documentos/bcrpdataapi.pdf"  target="_blank">API para Desarrolladores</a></li><li><a href="/estadisticas/series/documentos/bcrpdataaddin.pdf"  target="_blank">Add-In para Excel</a></li></ul></li><li><a href="#"  target="_self">Acerca de</a><ul><li><a href="/estadisticas/series/ayuda/bcrpdata"  target="_self">BCRPData</a></li><li><a href="/estadisticas/series/ayuda/condiciones-de-uso"  target="_self">Condiciones de Uso</a></li><li><a href="/estadisticas/series/documentos/bcrpdatasuscribirse.pdf"  target="_blank">Ventajas de la Suscripción</a></li></ul></li>				<li class="button-back-nav">
+					<a id="button-back-nav-link">Retroceder</a>
+				</li>
+					</ul>
+	</div>
+</div>
+
+
+
+			<div class="contenido">
+				
+
+<table border="0" class="estilo-tabla-index" cellpadding="0" cellspacing="0">
+<tr>     
+	<td id="contenedor-barra-menu" valign="top"   class="td-index">
+	<div id="barra-lateral" >
+		  
+
+<div id="menu-izquierda-dinamico">
+<h4 class="titulo-izquierda"><a href="#"  class="titulo-h4" target="_self">Consulta de Series</a></h4><ul class="forma-vineta"><li class="forma-separar"><a class="forma-url" href="/estadisticas/series/index"  target="_self">Por Categoría</a></li><li class="forma-separar"><a class="forma-url" href="/estadisticas/series/buscador"  target="_self">Por Series</a></li></ul><h4 class="titulo-izquierda"><a href="#"  class="titulo-h4" target="_self">Herramientas</a></h4><ul class="forma-vineta"><li class="forma-separar"><a class="forma-url" href="/estadisticas/series/lista/listadovalido"  target="_self">Listas Personalizadas</a></li><li class="forma-separar"><a class="forma-url" href="/estadisticas/series/ayuda/addin"  target="_self">Add-In para Excel</a></li><li class="forma-separar"><a class="forma-url" href="/estadisticas/series/ayuda/api"  target="_self">API para Desarrolladores</a></li><li class="forma-separar"><a class="forma-url" href="/estadisticas/series/ayuda/app"  target="_self">App para Móviles</a></li><li class="forma-separar"><a class="forma-url" href="/estadisticas/series/ayuda/metadatos"  target="_self">Metadatos</a></li></ul><h4 class="titulo-izquierda"><a href="#"  class="titulo-h4" target="_self">Encuesta de Expectativas</a></h4><ul class="forma-vineta"><li class="forma-separar"><a class="forma-url" href="https://www.bcrp.gob.pe/docs/Estadisticas/Encuestas/expectativas-inflacion.xlsx"  target="_blank">Inflación</a></li><li class="forma-separar"><a class="forma-url" href="https://www.bcrp.gob.pe/docs/Estadisticas/Encuestas/expectativas-pbi.xlsx"  target="_blank">Producto Bruto Interno</a></li><li class="forma-separar"><a class="forma-url" href="https://www.bcrp.gob.pe/docs/Estadisticas/Encuestas/expectativas-tipo-de-cambio.xlsx"  target="_blank">Tipo de Cambio</a></li><li class="forma-separar"><a class="forma-url" href="https://www.bcrp.gob.pe/docs/Estadisticas/Encuestas/expectativas-series-de-indices.xlsx"  target="_blank">Índices de confianza empresarial</a></li></ul><h4 class="titulo-izquierda"><a href="/estadisticas/series/contactenos"  class="titulo-h4" target="_self">Contáctenos</a></h4>	
+
+
+
+</div>
+	</div>	  
+	</td>
+
+  
+  
+<!--<td style="padding-left:10px;" valign="top">-->
+<td class="centro-contenido" valign="top">
+
+
+
+
+
+<div class="nav-links">
+	<ul>
+					<li>
+				<a href="/estadisticas/series">Inicio</a>
+			</li>
+							<li>
+						<span>/</span>
+						<a href="/estadisticas/series/diarias">Series Diarias</a>
+					</li>
+										<li>
+						<span>/</span>
+						<span class="only-title">Ver Tabla</span>
+					</li>
+						</ul>
+</div>
+
+
+
+<form id="frmDiarias" action="" method="post">
+    <div class="controles">
+        <div class="opciones_consulta">
+            <div class="fechas">
+                <div class="fecha">
+                    <div class="etiqueta"><p style="margin-left:-1px;">Desde:</p></div>
+                    <div class="grupo_combos">
+			   <label for="desde"></label>
+                        <input type="text" id="desde" name="desde" size="9" value="01/01/2021">
+                    </div>
+                </div>
+                <div class="fecha">
+                    <div class="etiqueta"><p style="margin-left:-1px;">Hasta:</p></div>
+                    <div class="grupo_combos">
+			   <label for="hasta"></label>
+                        <input type="text" id="hasta" name="hasta" size="9" value="31/12/2021">
+                    </div>
+                </div>
+            </div>
+
+            <div class="consultar" style="margin-top:11px;">
+                <p>
+                    <input type="button" id="btnBuscar" name="btnBuscar" class="btnbuscar" value="" onclick="return Opciones('R','frmDiarias','diarias');"/>
+		      <input type="button" id="btnExportacionXls" name="btnExportacionXls" class="btnxlsx" value="" onclick="return Opciones('ENR','frmDiarias','diarias');"/>
+		      <input type="button" id="btnExportacionCsv" name="btnExportacionCsv" class="btncsv" value="" onclick="return Opciones('CSVNR','frmDiarias','diarias');"/>
+		      <input type="button" id="btnGrafico" name="btnGrafico" class="btngrafico" value="" onclick="return Opciones('GRR','frmDiarias','diarias');"/>	                   
+                </p>    
+            </div>
+        </div>
+        <div class="opciones_salida"></div>
+    </div>
+
+
+
+
+	
+
+
+	
+	
+	
+   <h1 class="categoria">Índice General Bursátil BVL (índice)</h1>	
+        <div class="url">
+ https://estadisticas.bcrp.gob.pe/estadisticas/series/diarias/resultados/PD38026MD/html/2021-01-01/2021-12-31/    
+        </div>
+
+    
+
+	
+		
+	
+	
+	
+    
+<div class="barra-resultados">       
+    <table title="" summary="" class="series">
+        <tr>
+            <th class="cabecera">Fecha</th>
+                        <th class="cabecera">
+				Indicadores bursátiles - Índice General Bursátil BVL (índice)			</th>
+                    </tr>
+
+
+   	
+	
+	
+	
+	
+	
+	
+	
+		
+		
+                <tr>
+            <td class="periodo">
+            <b>04Ene21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21023.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>05Ene21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21009.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>06Ene21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21330.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>07Ene21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21693.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>08Ene21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21625.4            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>11Ene21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21654.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>12Ene21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21618.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>13Ene21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21517.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>14Ene21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21633.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>15Ene21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21465.2            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>18Ene21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21460.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>19Ene21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21561.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>20Ene21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21541.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>21Ene21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21403.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>22Ene21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21383.8            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>25Ene21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21394.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>26Ene21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21471.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>27Ene21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21067.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>28Ene21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21289.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>29Ene21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21110.2            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>01Feb21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21610.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>02Feb21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21451.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>03Feb21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21632.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>04Feb21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21552.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>05Feb21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21783.4            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>08Feb21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21941.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>09Feb21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            22310.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>10Feb21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            22492.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>11Feb21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            22151.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>12Feb21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            22414.0            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>15Feb21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            22232.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>16Feb21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            22597.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>17Feb21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            22681.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>18Feb21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            22469.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>19Feb21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            22794.2            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>22Feb21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            23180.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>23Feb21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            23179.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>24Feb21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            23199.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>25Feb21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            22875.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>26Feb21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            22530.2            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>01Mar21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            22810.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>02Mar21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            22871.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>03Mar21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            22872.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>04Mar21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            22536.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>05Mar21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            22550.4            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>08Mar21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            22565.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>09Mar21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            22566.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>10Mar21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            22702.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>11Mar21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            22739.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>12Mar21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            22767.4            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>15Mar21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            22673.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>16Mar21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            22340.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>17Mar21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            22443.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>18Mar21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            22312.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>19Mar21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            22214.8            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>22Mar21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21967.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>23Mar21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21529.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>24Mar21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21497.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>25Mar21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21254.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>26Mar21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21410.3            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>29Mar21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21405.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>30Mar21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21478.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>31Mar21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21372.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>01Abr21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            n.d.            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>02Abr21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            n.d.            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>05Abr21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21429.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>06Abr21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21510.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>07Abr21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21335.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>08Abr21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21799.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>09Abr21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21715.8            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>12Abr21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21315.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>13Abr21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21436.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>14Abr21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21279.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>15Abr21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21285.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>16Abr21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21194.1            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>19Abr21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20483.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>20Abr21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            19533.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>21Abr21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            19639.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>22Abr21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            19052.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>23Abr21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            19042.9            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>26Abr21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            19310.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>27Abr21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            19185.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>28Abr21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            19021.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>29Abr21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            19319.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>30Abr21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            19562.8            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>03May21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            19601.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>04May21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            19484.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>05May21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            19608.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>06May21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            19521.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>07May21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20178.1            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>10May21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20957.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>11May21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20870.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>12May21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21720.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>13May21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21515.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>14May21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21880.5            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>17May21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21832.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>18May21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21684.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>19May21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21204.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>20May21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21236.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>21May21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20571.7            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>24May21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20349.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>25May21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20237.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>26May21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20183.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>27May21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            19943.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>28May21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21016.0            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>31May21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21041.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>01Jun21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20973.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>02Jun21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21118.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>03Jun21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21382.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>04Jun21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            22218.7            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>07Jun21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20498.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>08Jun21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20385.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>09Jun21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            19667.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>10Jun21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            19987.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>11Jun21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            19809.8            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>14Jun21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            19608.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>15Jun21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            19202.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>16Jun21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18964.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>17Jun21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18695.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>18Jun21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18576.2            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>21Jun21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18627.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>22Jun21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18724.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>23Jun21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18779.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>24Jun21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18858.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>25Jun21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18970.0            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>28Jun21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            n.d.            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>29Jun21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            n.d.            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>30Jun21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18850.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>01Jul21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18675.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>02Jul21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18788.3            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>05Jul21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18961.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>06Jul21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18790.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>07Jul21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18803.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>08Jul21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18637.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>09Jul21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18822.8            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>12Jul21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18701.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>13Jul21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18685.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>14Jul21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18548.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>15Jul21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18604.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>16Jul21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18307.4            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>19Jul21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18170.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>20Jul21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18426.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>21Jul21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18743.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>22Jul21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18759.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>23Jul21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18544.0            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>26Jul21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18749.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>27Jul21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18775.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>28Jul21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            n.d.            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>29Jul21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            n.d.            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>30Jul21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            17671.8            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>02Ago21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            17845.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>03Ago21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            17624.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>04Ago21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            17447.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>05Ago21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            17331.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>06Ago21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            17331.3            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>09Ago21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            17205.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>10Ago21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            17062.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>11Ago21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            17003.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>12Ago21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            16829.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>13Ago21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            16771.3            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>16Ago21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            16736.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>17Ago21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            16368.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>18Ago21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            15916.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>19Ago21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            15529.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>20Ago21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            15532.1            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>23Ago21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            16211.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>24Ago21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            17034.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>25Ago21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            16991.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>26Ago21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            16893.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>27Ago21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            17444.2            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>30Ago21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            n.d.            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>31Ago21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            17653.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>01Set21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            17572.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>02Set21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            17508.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>03Set21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            17678.7            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>06Set21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            17712.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>07Set21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            17598.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>08Set21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            17410.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>09Set21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            17550.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>10Set21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            17715.5            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>13Set21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18063.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>14Set21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            17895.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>15Set21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18008.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>16Set21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            17885.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>17Set21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            17979.7            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>20Set21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            17747.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>21Set21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            17869.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>22Set21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18099.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>23Set21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18208.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>24Set21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18308.9            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>27Set21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18653.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>28Set21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18515.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>29Set21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18458.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>30Set21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18279.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>01Oct21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18348.7            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>04Oct21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18192.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>05Oct21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18342.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>06Oct21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18356.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>07Oct21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            19375.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>08Oct21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            n.d.            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>11Oct21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            19585.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>12Oct21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            19731.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>13Oct21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            19694.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>14Oct21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            19745.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>15Oct21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20489.5            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>18Oct21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20559.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>19Oct21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20679.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>20Oct21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20807.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>21Oct21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20859.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>22Oct21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20960.3            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>25Oct21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21243.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>26Oct21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21005.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>27Oct21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20885.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>28Oct21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20959.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>29Oct21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20737.8            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>01Nov21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            n.d.            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>02Nov21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20715.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>03Nov21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20528.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>04Nov21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20254.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>05Nov21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20420.1            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>08Nov21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20530.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>09Nov21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20488.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>10Nov21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20403.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>11Nov21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20665.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>12Nov21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20795.2            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>15Nov21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20687.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>16Nov21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20486.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>17Nov21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20092.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>18Nov21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20174.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>19Nov21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20125.3            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>22Nov21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            19832.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>23Nov21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            19987.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>24Nov21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20209.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>25Nov21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20251.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>26Nov21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            19864.2            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>29Nov21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20249.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>30Nov21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20416.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>01Dic21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            19884.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>02Dic21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20163.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>03Dic21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20000.4            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>06Dic21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20353.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>07Dic21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20520.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>08Dic21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            n.d.            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>09Dic21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20549.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>10Dic21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20272.5            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>13Dic21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20294.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>14Dic21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20117.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>15Dic21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            19890.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>16Dic21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20310.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>17Dic21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20342.6            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>20Dic21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20160.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>21Dic21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20642.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>22Dic21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20531.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>23Dic21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20765.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>24Dic21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20753.1            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>27Dic21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21023.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>28Dic21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20889.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>29Dic21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20857.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>30Dic21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21157.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>31Dic21</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21111.7            </td>
+                    </tr>
+            </table>
+
+	
+	
+</div>
+	
+		
+	
+    <table title="" summary="">
+	
+	
+	
+
+
+	
+	
+	
+    <tr>
+        <td style="text-align: right">
+            <input type="hidden" name="format" id="format" value=""/>
+            <input type="hidden" name="accion" id="accion" value=""/>
+            <input type="hidden" name="sufijo" id="sufijo" value="31Dic21"/>
+            <input type="hidden" name="anio11" id="anio11" value="2021"/>
+            <input type="hidden" name="anio22" id="anio22" value="2021"/>
+            <input type="hidden" name="mes11" id="mes11" value="01"/>
+            <input type="hidden" name="mes22" id="mes22" value="12"/>
+            <input type="hidden" name="dia11" id="dia11" value="01"/>
+            <input type="hidden" name="dia22" id="dia22" value="31"/>
+            <input type="hidden" name="codigos" id="codigos" value="'PD38026MD'"/>
+	    <input type="hidden" id="codigosurl" name="codigosurl" value="PD38026MD" />
+	     <input type="hidden" name="grupos" id="grupos" value=""/>
+	     <input type="hidden" id="idiomas" name="idiomas" value="resultados" />
+        </td>
+    </tr>
+    </table>
+
+	
+
+	
+	
+</form>
+
+
+
+  </td>
+</tr>
+
+</table>
+</div>
+
+
+</body>
+		<div class="footer-personalizado" id="footer-personalizado-principal">
+			<address class="wrapper-footer-sections datosfooter">
+			Jr. Santa Rosa 441-445, Lima-1, Perú <br>
+			Teléfono:  (511) 613 2000
+			</address>
+		</div>
+
+<script language="javascript" type="text/javascript">
+	if(document.forms[0])
+	update_counter(document.forms[0].id);
+
+	$("#button-back-nav-link").on("click", function(e) {
+		//history.go(-1);
+		console.log(document.referrer);
+		history.back();
+	});
+</script>
+
+</html>
+

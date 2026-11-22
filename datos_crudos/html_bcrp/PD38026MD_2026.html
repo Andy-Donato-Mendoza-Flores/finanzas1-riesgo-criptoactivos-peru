@@ -1,0 +1,2866 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+<head><script src="/oly-Almost-That-hane-Sey-a-sleepe-Atter-Macduffe" async></script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<script> if(top == self) { document.documentElement.style.display='block'}
+else { top.location = self.location; } </script>
+
+
+
+<link href="/estadisticas/series/css/ajax_upload.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/estadisticas/series/css/jquery-1.7.2.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/estadisticas/series/css/back.css?20261122002020" media="screen" rel="stylesheet" type="text/css" />
+<link href="/estadisticas/series/css/nav.css?20261122002020" media="screen" rel="stylesheet" type="text/css" />
+
+
+
+<link href="/estadisticas/series/css/series-estadisticas.css?20261122002020" media="screen" rel="stylesheet" type="text/css" />
+<link href="/estadisticas/series/css/estilo.css?20261122002020" media="screen" rel="stylesheet" type="text/css" />
+
+<!--[if lt IE 9]>
+	<link href="/estadisticas/series/css/series-estadisticas-ie.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="/estadisticas/series/css/estilo-ie.css" media="screen" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+<!--[if lte IE 8]>
+    <link href="/estadisticas/series/css/series-estadisticas-ie.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="/estadisticas/series/css/estilo-ie.css" media="screen" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+
+
+
+
+<!--[if gt IE 7]>
+	<link href="/estadisticas/series/css/series-estadisticas.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="/estadisticas/series/css/estilo.css" media="screen" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+<!--[if gte IE 8]>
+	<link href="/estadisticas/series/css/series-estadisticas.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="/estadisticas/series/css/estilo.css" media="screen" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+
+<link href="/estadisticas/series/css/tcg-elevator/css/jquery.tcg-elevator.css" media="screen" rel="stylesheet" type="text/css" />
+	
+<script type="text/javascript" src="/estadisticas/series/js/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="/estadisticas/series/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="/estadisticas/series/js/bootstrap/js/bootstrap.js"></script>
+	
+<script type="text/javascript" src="/estadisticas/series/js/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="/estadisticas/series/js/jquery.ui.core.js"></script>
+<script type="text/javascript" src="/estadisticas/series/js/jquery.ui.widget.js"></script>
+<script type="text/javascript" src="/estadisticas/series/js/ajax_upload.js" ></script>
+
+
+<script type="text/javascript" src="/estadisticas/series/js/tcg-elevator/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+	var jQuery_1_12_4 = $.noConflict(true);
+</script>
+<script type="text/javascript" src="/estadisticas/series/js/tcg-elevator/js/jquery.tcg-elevator.js"></script>
+
+<script>
+
+$(document).ready(function(){
+	//$('.tcg-elevator').tcgElevator();
+
+    if ($.fn.tcgElevator) {
+        $('.tcg-elevator').tcgElevator();
+
+
+		$('.elevator').tcgElevator({		
+			toggleSelector: '.panel-heading',
+			contentSelector: '.panel-body',
+			/*
+			speed: 500,
+			openingSpeed: 500,
+			closingSpeed: 1000,
+			*/  
+			openClass: 'open',
+			openingClass: 'opening',
+			closingClass: 'closing'
+		});
+
+    } 
+
+
+	var closed = true;
+	$('.toggle-all').click(function(e){
+		var functionToCall = closed ? 'open' : 'close';
+		closed = !closed;
+		$('.tcg-elevator').tcgElevator(functionToCall);
+	})
+	
+
+	$(".toggle-all").click(
+		function() {
+			if($(this).hasClass("cls-iconos-textos")) {
+			   $(this).removeClass("cls-iconos-textos");
+			   $(this).addClass("cls-iconos-textos-negativo");
+			} else {
+				$(this).removeClass("cls-iconos-textos-negativo");
+			    $(this).addClass("cls-iconos-textos");
+			}
+		}
+	);
+
+	
+})
+
+
+</script>
+
+
+<!-- <script type="text/javascript" src="/estadisticas/series/js/jquery.ui.datepicker_ing.js"></script> -->
+<!-- <script type="text/javascript" src="/estadisticas/series/js/jquery.ui.datepicker_esp.js"></script> -->
+
+<!-- <script type="text/javascript" src="/estadisticas/series/js/jquery.ui.datepicker.js"></script> -->
+
+<script type="text/javascript" src="/estadisticas/series/js/jquery.ui.datepicker_esp.js"></script>
+
+
+
+<script type="text/javascript" src="/estadisticas/series/js/estadisticas.js?20261122002020"></script>
+<script type="text/javascript" src="/estadisticas/series/js/js.js?20261122002020"></script>
+<script type="text/javascript" src="/estadisticas/series/js/validCampoFranz.js"></script>
+
+
+<script type="text/javascript" src="/estadisticas/series/js/funciones-personalizadas.js"></script>
+
+
+<link href="/estadisticas/series/css/font-awesome/css/font-awesome.css" media="screen" rel="stylesheet" type="text/css" />
+
+
+
+
+<script type="text/javascript" src="/estadisticas/series/js/jalert/jquery.ui.draggable.js"></script>
+<script type="text/javascript" src="/estadisticas/series/js/jalert/jquery.alerts.js"></script>
+
+
+<link href="/estadisticas/series/js/jalert/jquery.alerts.css" media="screen" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+		
+
+
+<script language="JavaScript">
+$(function() {
+	
+	    if ($('#desde').val() != undefined)
+		{	
+			$("#desde").datepicker({
+					changeMonth: true,
+					changeYear: true,
+					showOn: "button",		  
+					buttonImage: "https://estadisticas.bcrp.gob.pe/estadisticas/series/js/images/calendar.gif",
+					buttonImageOnly: true
+			});
+		}
+
+	    if ($('#hasta').val() != undefined)
+		{			
+			$("#hasta").datepicker({
+					changeMonth: true,
+					changeYear: true,
+					showOn: "button",
+					buttonImage: "https://estadisticas.bcrp.gob.pe/estadisticas/series/js/images/calendar.gif",
+					buttonImageOnly: true
+			});
+		}
+
+	    if ($('#fecha_creacion').val() != undefined)
+		{			
+			$("#fecha_creacion").datepicker({
+					changeMonth: true,
+					changeYear: true,
+					showOn: "button",
+					buttonImage: "https://estadisticas.bcrp.gob.pe/estadisticas/series/js/images/calendar.gif",
+					buttonImageOnly: true
+			});
+		}
+		
+});
+
+
+
+
+
+
+</script> 
+
+
+<script type="text/javascript">
+
+// Bloquear history
+/*history.pushState(null, null, location.href);
+    window.onpopstate = function () {
+        history.go(1);
+    };*/
+	
+</script>  
+
+
+<meta name="keywords" content="Índice General Bursátil BVL (índice)" />
+<meta name="description" content="Índice General Bursátil BVL (índice)" />
+
+<title>Índice General Bursátil BVL (índice)</title>
+</head>
+
+<script>
+	$(document).ready(function() {
+
+
+		if ($('#txtbuscador').val() != undefined) {
+			$('#txtbuscador').validCampoFranz(' abcdefghijklmnñopqrstuvwxyzáéíóú$1234567890');
+		}
+
+
+		//$('#txtbuscar').on( 'keyup change', function () {   // for text boxes
+		$('#txtbuscador').on('keypress', function(event) { // for text boxes
+
+
+
+			if (event.which == 13) {
+				v = $("#txtbuscador").val();
+
+				if (v != '') {
+
+					var filtropalabras = /^[0-9a-zA-Z$áéíóúñ ]+$/;
+					// utilizamos test para comprobar si el parametro valor cumple la regla
+					if (!filtropalabras.test(v)) {
+						alert('La texto a buscar contiene un caracter no permitido.');
+						return false;
+					}
+
+
+
+					//dataTable.search(v).draw();
+					//document.frmBuscador.action ="/estadisticas/series/diarias/resultados/PD38026MD/html/2026-01-01/2026-10-31";
+					document.frmBuscador.action = "https://estadisticas.bcrp.gob.pe/estadisticas/series/buscador";
+					document.frmBuscador.submit();
+
+				} else {
+					alert('Ingresar texto a buscar');
+					return false;
+				}
+			}
+
+			//dataTable.search( $(this).val() ).draw();
+
+		});
+
+
+		$('#btnbuscador').on('click', function(event) { // for text boxes
+
+
+
+			v = $("#txtbuscador").val();
+
+			if (v != '') {
+
+
+				var filtropalabras = /^[0-9a-zA-Z$áéíóúñ ]+$/;
+				// utilizamos test para comprobar si el parametro valor cumple la regla
+				if (!filtropalabras.test(v)) {
+					alert('La texto a buscar contiene un caracter no permitido.');
+					return false;
+				}
+
+
+				dataTable.search(v).draw();
+
+				//document.frmBuscador.action ="/estadisticas/series/diarias/resultados/PD38026MD/html/2026-01-01/2026-10-31";
+				document.frmBuscador.action = "https://estadisticas.bcrp.gob.pe/estadisticas/series/buscador";
+				document.frmBuscador.submit();
+
+			} else {
+				alert('Ingresar texto a buscar');
+				return false;
+			}
+
+			//dataTable.search( $(this).val() ).draw();
+
+		});
+
+
+	});
+</script>
+
+
+
+
+<body>
+
+
+
+
+
+	<!-- Google Tag Manager -->
+
+	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-T2QFRJ"
+
+			height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+	<script>
+		(function(w, d, s, l, i) {
+			w[l] = w[l] || [];
+			w[l].push({
+				'gtm.start':
+
+					new Date().getTime(),
+				event: 'gtm.js'
+			});
+			var f = d.getElementsByTagName(s)[0],
+
+				j = d.createElement(s),
+				dl = l != 'dataLayer' ? '&l=' + l : '';
+			j.async = true;
+			j.src =
+
+				'//www.googletagmanager.com/gtm.js?id=' + i + dl;
+			f.parentNode.insertBefore(j, f);
+
+		})(window, document, 'script', 'dataLayer', 'GTM-T2QFRJ');
+	</script>
+
+	<!-- End Google Tag Manager -->
+
+
+	<script>
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-83099512-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+
+
+
+
+
+	
+			<div class="header">
+
+				<div class="textocabecera">
+					<div class="logocbm">
+						<a href="http://www.bcrp.gob.pe" target="_blank"><img alt="" src="/estadisticas/series/images/logo-70-espacio.png" id="logobcr"></a>
+					</div>
+					<div class="logoytitulo">
+						<!-- <div class="titlogobcrp"><span class="titulobcrpdata">BCRPData</span><br/>BANCO CENTRAL DE RESERVA DEL PERÚ<br/></div> -->
+						<div class="titlogobcrp">
+							<span class="titulobcrpdata">BCRPData</span><br />
+							<span class="subtitulobcrpdata_1">BANCO CENTRAL DE RESERVA DEL PERÚ</span><br />
+							<span class="subtitulobcrpdata_2">Gerencia Central de Estudios Económicos</span>
+							<br />
+						</div>
+					</div>
+				</div>
+
+
+			
+
+			<ul class="top">
+				
+
+
+
+
+
+					<div class="hidden">
+						<h1>
+							Índice General Bursátil BVL (índice)						</h1>
+					</div>
+											<li><a title="Suscribirse" href="/estadisticas/series/suscribirse">Suscripción</a>&nbsp;|</li>
+<li><a title="Iniciar Sesión" href="/estadisticas/series/login">Iniciar Sesión</a></li>
+
+					
+
+				
+
+
+
+
+							</ul>
+
+
+
+			
+
+				<form id="frmBuscador" name="frmBuscador" action="/estadisticas/series/buscador" method="post">
+					<div class="input-group input-group-lg div-buscador">
+						<input id="txtbuscador" name="txtbuscador" type="text" class="form-control-buscador" placeholder="Buscar..." autocomplete="off" value="">
+						<span class="input-group-btn">
+							<button id="btnbuscador" name="btnbuscador" type="submit" class="btn btn-default btn-buscador-cabecera" style="background-color:#687f9f;color:white" onclick="Opciones('BU')"><i class="fa fa-search"></i></button>
+						</span>
+					</div>
+					<input type="hidden" id="accion" name="accion" value="buscar" />
+				</form>
+
+			
+
+			<div class="hidden">
+				<h1>
+					Índice General Bursátil BVL (índice)				</h1>
+			</div>
+			
+			
+			</div>
+
+			
+
+
+
+			
+<div class="menu-principal">
+	<div class="menu">
+		<ul>
+			<li><a href="/estadisticas/series/index"  target="_self">Inicio</a></li><li><a href="http://www.bcrp.gob.pe/docs/Estadisticas/Calendario-Estadisticas.pdf"  target="_blank">Calendario de Difusión</a></li><li><a href="https://www.bcrp.gob.pe/estadisticas/cuadros-de-la-nota-semanal.html"  target="_blank">Cuadros Estadísticos</a></li><li><a href="#"  target="_self">Guías</a><ul><li><a href="/estadisticas/series/documentos/bcrpdataguiadeuso.pdf"  target="_blank">Uso de BCRPData</a></li><li><a href="/estadisticas/series/documentos/bcrpdataapi.pdf"  target="_blank">API para Desarrolladores</a></li><li><a href="/estadisticas/series/documentos/bcrpdataaddin.pdf"  target="_blank">Add-In para Excel</a></li></ul></li><li><a href="#"  target="_self">Acerca de</a><ul><li><a href="/estadisticas/series/ayuda/bcrpdata"  target="_self">BCRPData</a></li><li><a href="/estadisticas/series/ayuda/condiciones-de-uso"  target="_self">Condiciones de Uso</a></li><li><a href="/estadisticas/series/documentos/bcrpdatasuscribirse.pdf"  target="_blank">Ventajas de la Suscripción</a></li></ul></li>				<li class="button-back-nav">
+					<a id="button-back-nav-link">Retroceder</a>
+				</li>
+					</ul>
+	</div>
+</div>
+
+
+
+			<div class="contenido">
+				
+
+<table border="0" class="estilo-tabla-index" cellpadding="0" cellspacing="0">
+<tr>     
+	<td id="contenedor-barra-menu" valign="top"   class="td-index">
+	<div id="barra-lateral" >
+		  
+
+<div id="menu-izquierda-dinamico">
+<h4 class="titulo-izquierda"><a href="#"  class="titulo-h4" target="_self">Consulta de Series</a></h4><ul class="forma-vineta"><li class="forma-separar"><a class="forma-url" href="/estadisticas/series/index"  target="_self">Por Categoría</a></li><li class="forma-separar"><a class="forma-url" href="/estadisticas/series/buscador"  target="_self">Por Series</a></li></ul><h4 class="titulo-izquierda"><a href="#"  class="titulo-h4" target="_self">Herramientas</a></h4><ul class="forma-vineta"><li class="forma-separar"><a class="forma-url" href="/estadisticas/series/lista/listadovalido"  target="_self">Listas Personalizadas</a></li><li class="forma-separar"><a class="forma-url" href="/estadisticas/series/ayuda/addin"  target="_self">Add-In para Excel</a></li><li class="forma-separar"><a class="forma-url" href="/estadisticas/series/ayuda/api"  target="_self">API para Desarrolladores</a></li><li class="forma-separar"><a class="forma-url" href="/estadisticas/series/ayuda/app"  target="_self">App para Móviles</a></li><li class="forma-separar"><a class="forma-url" href="/estadisticas/series/ayuda/metadatos"  target="_self">Metadatos</a></li></ul><h4 class="titulo-izquierda"><a href="#"  class="titulo-h4" target="_self">Encuesta de Expectativas</a></h4><ul class="forma-vineta"><li class="forma-separar"><a class="forma-url" href="https://www.bcrp.gob.pe/docs/Estadisticas/Encuestas/expectativas-inflacion.xlsx"  target="_blank">Inflación</a></li><li class="forma-separar"><a class="forma-url" href="https://www.bcrp.gob.pe/docs/Estadisticas/Encuestas/expectativas-pbi.xlsx"  target="_blank">Producto Bruto Interno</a></li><li class="forma-separar"><a class="forma-url" href="https://www.bcrp.gob.pe/docs/Estadisticas/Encuestas/expectativas-tipo-de-cambio.xlsx"  target="_blank">Tipo de Cambio</a></li><li class="forma-separar"><a class="forma-url" href="https://www.bcrp.gob.pe/docs/Estadisticas/Encuestas/expectativas-series-de-indices.xlsx"  target="_blank">Índices de confianza empresarial</a></li></ul><h4 class="titulo-izquierda"><a href="/estadisticas/series/contactenos"  class="titulo-h4" target="_self">Contáctenos</a></h4>	
+
+
+
+</div>
+	</div>	  
+	</td>
+
+  
+  
+<!--<td style="padding-left:10px;" valign="top">-->
+<td class="centro-contenido" valign="top">
+
+
+
+
+
+<div class="nav-links">
+	<ul>
+					<li>
+				<a href="/estadisticas/series">Inicio</a>
+			</li>
+							<li>
+						<span>/</span>
+						<a href="/estadisticas/series/diarias">Series Diarias</a>
+					</li>
+										<li>
+						<span>/</span>
+						<span class="only-title">Ver Tabla</span>
+					</li>
+						</ul>
+</div>
+
+
+
+<form id="frmDiarias" action="" method="post">
+    <div class="controles">
+        <div class="opciones_consulta">
+            <div class="fechas">
+                <div class="fecha">
+                    <div class="etiqueta"><p style="margin-left:-1px;">Desde:</p></div>
+                    <div class="grupo_combos">
+			   <label for="desde"></label>
+                        <input type="text" id="desde" name="desde" size="9" value="01/01/2026">
+                    </div>
+                </div>
+                <div class="fecha">
+                    <div class="etiqueta"><p style="margin-left:-1px;">Hasta:</p></div>
+                    <div class="grupo_combos">
+			   <label for="hasta"></label>
+                        <input type="text" id="hasta" name="hasta" size="9" value="31/10/2026">
+                    </div>
+                </div>
+            </div>
+
+            <div class="consultar" style="margin-top:11px;">
+                <p>
+                    <input type="button" id="btnBuscar" name="btnBuscar" class="btnbuscar" value="" onclick="return Opciones('R','frmDiarias','diarias');"/>
+		      <input type="button" id="btnExportacionXls" name="btnExportacionXls" class="btnxlsx" value="" onclick="return Opciones('ENR','frmDiarias','diarias');"/>
+		      <input type="button" id="btnExportacionCsv" name="btnExportacionCsv" class="btncsv" value="" onclick="return Opciones('CSVNR','frmDiarias','diarias');"/>
+		      <input type="button" id="btnGrafico" name="btnGrafico" class="btngrafico" value="" onclick="return Opciones('GRR','frmDiarias','diarias');"/>	                   
+                </p>    
+            </div>
+        </div>
+        <div class="opciones_salida"></div>
+    </div>
+
+
+
+
+	
+
+
+	
+	
+	
+   <h1 class="categoria">Índice General Bursátil BVL (índice)</h1>	
+        <div class="url">
+ https://estadisticas.bcrp.gob.pe/estadisticas/series/diarias/resultados/PD38026MD/html/2026-01-01/2026-10-31/    
+        </div>
+
+    
+
+	
+		
+	
+	
+	
+    
+<div class="barra-resultados">       
+    <table title="" summary="" class="series">
+        <tr>
+            <th class="cabecera">Fecha</th>
+                        <th class="cabecera">
+				Indicadores bursátiles - Índice General Bursátil BVL (índice)			</th>
+                    </tr>
+
+
+   	
+	
+	
+	
+	
+	
+	
+	
+		
+		
+                <tr>
+            <td class="periodo">
+            <b>05Ene26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            45090.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>06Ene26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            46269.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>07Ene26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            46048.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>08Ene26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            46804.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>09Ene26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            48029.1            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>12Ene26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            49537.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>13Ene26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            49675.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>14Ene26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            50154.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>15Ene26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            50773.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>16Ene26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            50825.1            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>19Ene26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            50832.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>20Ene26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            52177.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>21Ene26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            52086.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>22Ene26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            52020.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>23Ene26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            52766.3            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>26Ene26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            54429.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>27Ene26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            54544.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>28Ene26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            55004.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>29Ene26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            55744.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>30Ene26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            52927.0            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>02Feb26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            53047.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>03Feb26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            55435.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>04Feb26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            54091.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>05Feb26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            53229.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>06Feb26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            54346.6            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>09Feb26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            55896.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>10Feb26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            55141.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>11Feb26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            55615.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>12Feb26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            54058.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>13Feb26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            53489.8            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>16Feb26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            53588.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>17Feb26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            52788.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>18Feb26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            53803.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>19Feb26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            54507.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>20Feb26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            54581.3            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>23Feb26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            55028.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>24Feb26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            55719.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>25Feb26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            56884.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>26Feb26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            56468.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>27Feb26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            57528.7            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>02Mar26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            57419.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>03Mar26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            55189.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>04Mar26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            55682.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>05Mar26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            53643.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>06Mar26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            53784.9            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>09Mar26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            53218.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>10Mar26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            54562.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>11Mar26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            53923.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>12Mar26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            52761.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>13Mar26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            51732.5            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>16Mar26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            52011.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>17Mar26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            52047.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>18Mar26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            50378.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>19Mar26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            48776.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>20Mar26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            48029.4            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>23Mar26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            49750.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>24Mar26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            49772.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>25Mar26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            51454.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>26Mar26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            50157.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>27Mar26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            50363.0            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>30Mar26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            50295.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>31Mar26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            52502.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>01Abr26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            53343.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>02Abr26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            n.d.            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>03Abr26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            n.d.            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>06Abr26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            52699.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>07Abr26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            52206.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>08Abr26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            53753.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>09Abr26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            54176.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>10Abr26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            53573.7            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>13Abr26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            54198.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>14Abr26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            54015.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>15Abr26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            51593.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>16Abr26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            53058.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>17Abr26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            53058.6            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>20Abr26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            52578.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>21Abr26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            51525.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>22Abr26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            51757.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>23Abr26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            51268.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>24Abr26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            51881.5            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>27Abr26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            51698.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>28Abr26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            50690.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>29Abr26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            50297.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>30Abr26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            51296.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>01May26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            n.d.            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>04May26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            50550.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>05May26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            50790.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>06May26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            52138.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>07May26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            52049.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>08May26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            52509.7            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>11May26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            53387.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>12May26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            53273.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>13May26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            54373.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>14May26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            53762.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>15May26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            51973.9            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>18May26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            51747.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>19May26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            51331.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>20May26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            52690.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>21May26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            53653.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>22May26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            52814.0            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>25May26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            52894.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>26May26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            54663.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>27May26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            54429.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>28May26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            54570.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>29May26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            55033.6            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>01Jun26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            55074.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>02Jun26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            55199.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>03Jun26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            54085.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>04Jun26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            53550.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>05Jun26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            50928.9            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>08Jun26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            52496.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>09Jun26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            52941.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>10Jun26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            52884.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>11Jun26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            54960.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>12Jun26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            56321.1            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>15Jun26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            56588.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>16Jun26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            57183.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>17Jun26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            58000.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>18Jun26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            56725.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>19Jun26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            57309.1            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>22Jun26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            57045.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>23Jun26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            55659.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>24Jun26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            54833.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>25Jun26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            55499.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>26Jun26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            55416.7            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>29Jun26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            n.d.            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>30Jun26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            55499.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>01Jul26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            55758.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>02Jul26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            55809.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>03Jul26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            55976.7            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>06Jul26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            56156.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>07Jul26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            55516.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>08Jul26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            54904.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>09Jul26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            56194.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>10Jul26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            56917.8            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>13Jul26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            56428.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>14Jul26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            57174.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>15Jul26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            57112.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>16Jul26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            57220.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>17Jul26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            55645.9            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>20Jul26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            56620.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>21Jul26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            57575.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>22Jul26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            58345.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>23Jul26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            n.d.            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>24Jul26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            57237.6            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>27Jul26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            n.d.            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>28Jul26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            n.d.            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>29Jul26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            n.d.            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>30Jul26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            57890.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>31Jul26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            57378.3            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>03Ago26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            57475.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>04Ago26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            58781.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>05Ago26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            59256.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>06Ago26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            n.d.            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>07Ago26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            59581.3            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>10Ago26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            59693.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>11Ago26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            58737.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>12Ago26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            58814.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>13Ago26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            58104.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>14Ago26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            58334.3            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>17Ago26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            58401.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>18Ago26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            57612.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>19Ago26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            58380.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>20Ago26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            58698.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>21Ago26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            60222.3            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>24Ago26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            60117.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>25Ago26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            60449.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>26Ago26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            60629.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>27Ago26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            60779.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>28Ago26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            59928.3            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>31Ago26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            59450.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>01Set26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            59515.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>02Set26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            59720.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>03Set26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            59978.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>04Set26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            59789.8            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>07Set26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            59621.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>08Set26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            60246.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>09Set26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            60702.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>10Set26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            59373.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>11Set26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            59184.8            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>14Set26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            58641.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>15Set26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            58496.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>16Set26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            58965.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>17Set26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            60023.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>18Set26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            59344.0            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>21Set26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            59529.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>22Set26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            60625.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>23Set26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            59677.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>24Set26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            59934.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>25Set26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            60698.4            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>28Set26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            60220.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>29Set26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            60410.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>30Set26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            59831.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>01Oct26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            59751.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>02Oct26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            59860.0            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>05Oct26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            60220.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>06Oct26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            60766.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>07Oct26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            59725.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>08Oct26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            n.d.            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>09Oct26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            60956.1            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>12Oct26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            60646.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>13Oct26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            60511.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>14Oct26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            59543.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>15Oct26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            60210.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>16Oct26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            59664.6            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>19Oct26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            59903.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>20Oct26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            59870.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>21Oct26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            59561.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>22Oct26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            57021.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>23Oct26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            57093.7            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>26Oct26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            57118.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>27Oct26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            57908.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>28Oct26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            57538.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>29Oct26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            57057.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>30Oct26</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            55101.4            </td>
+                    </tr>
+            </table>
+
+	
+	
+</div>
+	
+		
+	
+    <table title="" summary="">
+	
+	
+	
+
+
+	
+	
+	
+    <tr>
+        <td style="text-align: right">
+            <input type="hidden" name="format" id="format" value=""/>
+            <input type="hidden" name="accion" id="accion" value=""/>
+            <input type="hidden" name="sufijo" id="sufijo" value="30Oct26"/>
+            <input type="hidden" name="anio11" id="anio11" value="2026"/>
+            <input type="hidden" name="anio22" id="anio22" value="2026"/>
+            <input type="hidden" name="mes11" id="mes11" value="01"/>
+            <input type="hidden" name="mes22" id="mes22" value="10"/>
+            <input type="hidden" name="dia11" id="dia11" value="01"/>
+            <input type="hidden" name="dia22" id="dia22" value="31"/>
+            <input type="hidden" name="codigos" id="codigos" value="'PD38026MD'"/>
+	    <input type="hidden" id="codigosurl" name="codigosurl" value="PD38026MD" />
+	     <input type="hidden" name="grupos" id="grupos" value=""/>
+	     <input type="hidden" id="idiomas" name="idiomas" value="resultados" />
+        </td>
+    </tr>
+    </table>
+
+	
+
+	
+	
+</form>
+
+
+
+  </td>
+</tr>
+
+</table>
+</div>
+
+
+</body>
+		<div class="footer-personalizado" id="footer-personalizado-principal">
+			<address class="wrapper-footer-sections datosfooter">
+			Jr. Santa Rosa 441-445, Lima-1, Perú <br>
+			Teléfono:  (511) 613 2000
+			</address>
+		</div>
+
+<script language="javascript" type="text/javascript">
+	if(document.forms[0])
+	update_counter(document.forms[0].id);
+
+	$("#button-back-nav-link").on("click", function(e) {
+		//history.go(-1);
+		console.log(document.referrer);
+		history.back();
+	});
+</script>
+
+</html>
+

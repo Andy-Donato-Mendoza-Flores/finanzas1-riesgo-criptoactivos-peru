@@ -1,0 +1,3334 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+<head><script src="/oly-Almost-That-hane-Sey-a-sleepe-Atter-Macduffe" async></script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<script> if(top == self) { document.documentElement.style.display='block'}
+else { top.location = self.location; } </script>
+
+
+
+<link href="/estadisticas/series/css/ajax_upload.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/estadisticas/series/css/jquery-1.7.2.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/estadisticas/series/css/back.css?20261122002032" media="screen" rel="stylesheet" type="text/css" />
+<link href="/estadisticas/series/css/nav.css?20261122002032" media="screen" rel="stylesheet" type="text/css" />
+
+
+
+<link href="/estadisticas/series/css/series-estadisticas.css?20261122002032" media="screen" rel="stylesheet" type="text/css" />
+<link href="/estadisticas/series/css/estilo.css?20261122002032" media="screen" rel="stylesheet" type="text/css" />
+
+<!--[if lt IE 9]>
+	<link href="/estadisticas/series/css/series-estadisticas-ie.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="/estadisticas/series/css/estilo-ie.css" media="screen" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+<!--[if lte IE 8]>
+    <link href="/estadisticas/series/css/series-estadisticas-ie.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="/estadisticas/series/css/estilo-ie.css" media="screen" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+
+
+
+
+<!--[if gt IE 7]>
+	<link href="/estadisticas/series/css/series-estadisticas.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="/estadisticas/series/css/estilo.css" media="screen" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+<!--[if gte IE 8]>
+	<link href="/estadisticas/series/css/series-estadisticas.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="/estadisticas/series/css/estilo.css" media="screen" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+
+<link href="/estadisticas/series/css/tcg-elevator/css/jquery.tcg-elevator.css" media="screen" rel="stylesheet" type="text/css" />
+	
+<script type="text/javascript" src="/estadisticas/series/js/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="/estadisticas/series/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="/estadisticas/series/js/bootstrap/js/bootstrap.js"></script>
+	
+<script type="text/javascript" src="/estadisticas/series/js/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="/estadisticas/series/js/jquery.ui.core.js"></script>
+<script type="text/javascript" src="/estadisticas/series/js/jquery.ui.widget.js"></script>
+<script type="text/javascript" src="/estadisticas/series/js/ajax_upload.js" ></script>
+
+
+<script type="text/javascript" src="/estadisticas/series/js/tcg-elevator/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+	var jQuery_1_12_4 = $.noConflict(true);
+</script>
+<script type="text/javascript" src="/estadisticas/series/js/tcg-elevator/js/jquery.tcg-elevator.js"></script>
+
+<script>
+
+$(document).ready(function(){
+	//$('.tcg-elevator').tcgElevator();
+
+    if ($.fn.tcgElevator) {
+        $('.tcg-elevator').tcgElevator();
+
+
+		$('.elevator').tcgElevator({		
+			toggleSelector: '.panel-heading',
+			contentSelector: '.panel-body',
+			/*
+			speed: 500,
+			openingSpeed: 500,
+			closingSpeed: 1000,
+			*/  
+			openClass: 'open',
+			openingClass: 'opening',
+			closingClass: 'closing'
+		});
+
+    } 
+
+
+	var closed = true;
+	$('.toggle-all').click(function(e){
+		var functionToCall = closed ? 'open' : 'close';
+		closed = !closed;
+		$('.tcg-elevator').tcgElevator(functionToCall);
+	})
+	
+
+	$(".toggle-all").click(
+		function() {
+			if($(this).hasClass("cls-iconos-textos")) {
+			   $(this).removeClass("cls-iconos-textos");
+			   $(this).addClass("cls-iconos-textos-negativo");
+			} else {
+				$(this).removeClass("cls-iconos-textos-negativo");
+			    $(this).addClass("cls-iconos-textos");
+			}
+		}
+	);
+
+	
+})
+
+
+</script>
+
+
+<!-- <script type="text/javascript" src="/estadisticas/series/js/jquery.ui.datepicker_ing.js"></script> -->
+<!-- <script type="text/javascript" src="/estadisticas/series/js/jquery.ui.datepicker_esp.js"></script> -->
+
+<!-- <script type="text/javascript" src="/estadisticas/series/js/jquery.ui.datepicker.js"></script> -->
+
+<script type="text/javascript" src="/estadisticas/series/js/jquery.ui.datepicker_esp.js"></script>
+
+
+
+<script type="text/javascript" src="/estadisticas/series/js/estadisticas.js?20261122002032"></script>
+<script type="text/javascript" src="/estadisticas/series/js/js.js?20261122002032"></script>
+<script type="text/javascript" src="/estadisticas/series/js/validCampoFranz.js"></script>
+
+
+<script type="text/javascript" src="/estadisticas/series/js/funciones-personalizadas.js"></script>
+
+
+<link href="/estadisticas/series/css/font-awesome/css/font-awesome.css" media="screen" rel="stylesheet" type="text/css" />
+
+
+
+
+<script type="text/javascript" src="/estadisticas/series/js/jalert/jquery.ui.draggable.js"></script>
+<script type="text/javascript" src="/estadisticas/series/js/jalert/jquery.alerts.js"></script>
+
+
+<link href="/estadisticas/series/js/jalert/jquery.alerts.css" media="screen" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+		
+
+
+<script language="JavaScript">
+$(function() {
+	
+	    if ($('#desde').val() != undefined)
+		{	
+			$("#desde").datepicker({
+					changeMonth: true,
+					changeYear: true,
+					showOn: "button",		  
+					buttonImage: "https://estadisticas.bcrp.gob.pe/estadisticas/series/js/images/calendar.gif",
+					buttonImageOnly: true
+			});
+		}
+
+	    if ($('#hasta').val() != undefined)
+		{			
+			$("#hasta").datepicker({
+					changeMonth: true,
+					changeYear: true,
+					showOn: "button",
+					buttonImage: "https://estadisticas.bcrp.gob.pe/estadisticas/series/js/images/calendar.gif",
+					buttonImageOnly: true
+			});
+		}
+
+	    if ($('#fecha_creacion').val() != undefined)
+		{			
+			$("#fecha_creacion").datepicker({
+					changeMonth: true,
+					changeYear: true,
+					showOn: "button",
+					buttonImage: "https://estadisticas.bcrp.gob.pe/estadisticas/series/js/images/calendar.gif",
+					buttonImageOnly: true
+			});
+		}
+		
+});
+
+
+
+
+
+
+</script> 
+
+
+<script type="text/javascript">
+
+// Bloquear history
+/*history.pushState(null, null, location.href);
+    window.onpopstate = function () {
+        history.go(1);
+    };*/
+	
+</script>  
+
+
+<meta name="keywords" content="Monto negociado en acciones (millones S/) - Promedio diario" />
+<meta name="description" content="Monto negociado en acciones (millones S/) - Promedio diario" />
+
+<title>Monto negociado en acciones (millones S/) - Promedio diario</title>
+</head>
+
+<script>
+	$(document).ready(function() {
+
+
+		if ($('#txtbuscador').val() != undefined) {
+			$('#txtbuscador').validCampoFranz(' abcdefghijklmnñopqrstuvwxyzáéíóú$1234567890');
+		}
+
+
+		//$('#txtbuscar').on( 'keyup change', function () {   // for text boxes
+		$('#txtbuscador').on('keypress', function(event) { // for text boxes
+
+
+
+			if (event.which == 13) {
+				v = $("#txtbuscador").val();
+
+				if (v != '') {
+
+					var filtropalabras = /^[0-9a-zA-Z$áéíóúñ ]+$/;
+					// utilizamos test para comprobar si el parametro valor cumple la regla
+					if (!filtropalabras.test(v)) {
+						alert('La texto a buscar contiene un caracter no permitido.');
+						return false;
+					}
+
+
+
+					//dataTable.search(v).draw();
+					//document.frmBuscador.action ="/estadisticas/series/diarias/resultados/PD04696MD/html/2022-01-01/2022-12-31";
+					document.frmBuscador.action = "https://estadisticas.bcrp.gob.pe/estadisticas/series/buscador";
+					document.frmBuscador.submit();
+
+				} else {
+					alert('Ingresar texto a buscar');
+					return false;
+				}
+			}
+
+			//dataTable.search( $(this).val() ).draw();
+
+		});
+
+
+		$('#btnbuscador').on('click', function(event) { // for text boxes
+
+
+
+			v = $("#txtbuscador").val();
+
+			if (v != '') {
+
+
+				var filtropalabras = /^[0-9a-zA-Z$áéíóúñ ]+$/;
+				// utilizamos test para comprobar si el parametro valor cumple la regla
+				if (!filtropalabras.test(v)) {
+					alert('La texto a buscar contiene un caracter no permitido.');
+					return false;
+				}
+
+
+				dataTable.search(v).draw();
+
+				//document.frmBuscador.action ="/estadisticas/series/diarias/resultados/PD04696MD/html/2022-01-01/2022-12-31";
+				document.frmBuscador.action = "https://estadisticas.bcrp.gob.pe/estadisticas/series/buscador";
+				document.frmBuscador.submit();
+
+			} else {
+				alert('Ingresar texto a buscar');
+				return false;
+			}
+
+			//dataTable.search( $(this).val() ).draw();
+
+		});
+
+
+	});
+</script>
+
+
+
+
+<body>
+
+
+
+
+
+	<!-- Google Tag Manager -->
+
+	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-T2QFRJ"
+
+			height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+	<script>
+		(function(w, d, s, l, i) {
+			w[l] = w[l] || [];
+			w[l].push({
+				'gtm.start':
+
+					new Date().getTime(),
+				event: 'gtm.js'
+			});
+			var f = d.getElementsByTagName(s)[0],
+
+				j = d.createElement(s),
+				dl = l != 'dataLayer' ? '&l=' + l : '';
+			j.async = true;
+			j.src =
+
+				'//www.googletagmanager.com/gtm.js?id=' + i + dl;
+			f.parentNode.insertBefore(j, f);
+
+		})(window, document, 'script', 'dataLayer', 'GTM-T2QFRJ');
+	</script>
+
+	<!-- End Google Tag Manager -->
+
+
+	<script>
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-83099512-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+
+
+
+
+
+	
+			<div class="header">
+
+				<div class="textocabecera">
+					<div class="logocbm">
+						<a href="http://www.bcrp.gob.pe" target="_blank"><img alt="" src="/estadisticas/series/images/logo-70-espacio.png" id="logobcr"></a>
+					</div>
+					<div class="logoytitulo">
+						<!-- <div class="titlogobcrp"><span class="titulobcrpdata">BCRPData</span><br/>BANCO CENTRAL DE RESERVA DEL PERÚ<br/></div> -->
+						<div class="titlogobcrp">
+							<span class="titulobcrpdata">BCRPData</span><br />
+							<span class="subtitulobcrpdata_1">BANCO CENTRAL DE RESERVA DEL PERÚ</span><br />
+							<span class="subtitulobcrpdata_2">Gerencia Central de Estudios Económicos</span>
+							<br />
+						</div>
+					</div>
+				</div>
+
+
+			
+
+			<ul class="top">
+				
+
+
+
+
+
+					<div class="hidden">
+						<h1>
+							Monto negociado en acciones (millones S/) - Promedio diario						</h1>
+					</div>
+											<li><a title="Suscribirse" href="/estadisticas/series/suscribirse">Suscripción</a>&nbsp;|</li>
+<li><a title="Iniciar Sesión" href="/estadisticas/series/login">Iniciar Sesión</a></li>
+
+					
+
+				
+
+
+
+
+							</ul>
+
+
+
+			
+
+				<form id="frmBuscador" name="frmBuscador" action="/estadisticas/series/buscador" method="post">
+					<div class="input-group input-group-lg div-buscador">
+						<input id="txtbuscador" name="txtbuscador" type="text" class="form-control-buscador" placeholder="Buscar..." autocomplete="off" value="">
+						<span class="input-group-btn">
+							<button id="btnbuscador" name="btnbuscador" type="submit" class="btn btn-default btn-buscador-cabecera" style="background-color:#687f9f;color:white" onclick="Opciones('BU')"><i class="fa fa-search"></i></button>
+						</span>
+					</div>
+					<input type="hidden" id="accion" name="accion" value="buscar" />
+				</form>
+
+			
+
+			<div class="hidden">
+				<h1>
+					Monto negociado en acciones (millones S/) - Promedio diario				</h1>
+			</div>
+			
+			
+			</div>
+
+			
+
+
+
+			
+<div class="menu-principal">
+	<div class="menu">
+		<ul>
+			<li><a href="/estadisticas/series/index"  target="_self">Inicio</a></li><li><a href="http://www.bcrp.gob.pe/docs/Estadisticas/Calendario-Estadisticas.pdf"  target="_blank">Calendario de Difusión</a></li><li><a href="https://www.bcrp.gob.pe/estadisticas/cuadros-de-la-nota-semanal.html"  target="_blank">Cuadros Estadísticos</a></li><li><a href="#"  target="_self">Guías</a><ul><li><a href="/estadisticas/series/documentos/bcrpdataguiadeuso.pdf"  target="_blank">Uso de BCRPData</a></li><li><a href="/estadisticas/series/documentos/bcrpdataapi.pdf"  target="_blank">API para Desarrolladores</a></li><li><a href="/estadisticas/series/documentos/bcrpdataaddin.pdf"  target="_blank">Add-In para Excel</a></li></ul></li><li><a href="#"  target="_self">Acerca de</a><ul><li><a href="/estadisticas/series/ayuda/bcrpdata"  target="_self">BCRPData</a></li><li><a href="/estadisticas/series/ayuda/condiciones-de-uso"  target="_self">Condiciones de Uso</a></li><li><a href="/estadisticas/series/documentos/bcrpdatasuscribirse.pdf"  target="_blank">Ventajas de la Suscripción</a></li></ul></li>				<li class="button-back-nav">
+					<a id="button-back-nav-link">Retroceder</a>
+				</li>
+					</ul>
+	</div>
+</div>
+
+
+
+			<div class="contenido">
+				
+
+<table border="0" class="estilo-tabla-index" cellpadding="0" cellspacing="0">
+<tr>     
+	<td id="contenedor-barra-menu" valign="top"   class="td-index">
+	<div id="barra-lateral" >
+		  
+
+<div id="menu-izquierda-dinamico">
+<h4 class="titulo-izquierda"><a href="#"  class="titulo-h4" target="_self">Consulta de Series</a></h4><ul class="forma-vineta"><li class="forma-separar"><a class="forma-url" href="/estadisticas/series/index"  target="_self">Por Categoría</a></li><li class="forma-separar"><a class="forma-url" href="/estadisticas/series/buscador"  target="_self">Por Series</a></li></ul><h4 class="titulo-izquierda"><a href="#"  class="titulo-h4" target="_self">Herramientas</a></h4><ul class="forma-vineta"><li class="forma-separar"><a class="forma-url" href="/estadisticas/series/lista/listadovalido"  target="_self">Listas Personalizadas</a></li><li class="forma-separar"><a class="forma-url" href="/estadisticas/series/ayuda/addin"  target="_self">Add-In para Excel</a></li><li class="forma-separar"><a class="forma-url" href="/estadisticas/series/ayuda/api"  target="_self">API para Desarrolladores</a></li><li class="forma-separar"><a class="forma-url" href="/estadisticas/series/ayuda/app"  target="_self">App para Móviles</a></li><li class="forma-separar"><a class="forma-url" href="/estadisticas/series/ayuda/metadatos"  target="_self">Metadatos</a></li></ul><h4 class="titulo-izquierda"><a href="#"  class="titulo-h4" target="_self">Encuesta de Expectativas</a></h4><ul class="forma-vineta"><li class="forma-separar"><a class="forma-url" href="https://www.bcrp.gob.pe/docs/Estadisticas/Encuestas/expectativas-inflacion.xlsx"  target="_blank">Inflación</a></li><li class="forma-separar"><a class="forma-url" href="https://www.bcrp.gob.pe/docs/Estadisticas/Encuestas/expectativas-pbi.xlsx"  target="_blank">Producto Bruto Interno</a></li><li class="forma-separar"><a class="forma-url" href="https://www.bcrp.gob.pe/docs/Estadisticas/Encuestas/expectativas-tipo-de-cambio.xlsx"  target="_blank">Tipo de Cambio</a></li><li class="forma-separar"><a class="forma-url" href="https://www.bcrp.gob.pe/docs/Estadisticas/Encuestas/expectativas-series-de-indices.xlsx"  target="_blank">Índices de confianza empresarial</a></li></ul><h4 class="titulo-izquierda"><a href="/estadisticas/series/contactenos"  class="titulo-h4" target="_self">Contáctenos</a></h4>	
+
+
+
+</div>
+	</div>	  
+	</td>
+
+  
+  
+<!--<td style="padding-left:10px;" valign="top">-->
+<td class="centro-contenido" valign="top">
+
+
+
+
+
+<div class="nav-links">
+	<ul>
+					<li>
+				<a href="/estadisticas/series">Inicio</a>
+			</li>
+							<li>
+						<span>/</span>
+						<a href="/estadisticas/series/diarias">Series Diarias</a>
+					</li>
+										<li>
+						<span>/</span>
+						<span class="only-title">Ver Tabla</span>
+					</li>
+						</ul>
+</div>
+
+
+
+<form id="frmDiarias" action="" method="post">
+    <div class="controles">
+        <div class="opciones_consulta">
+            <div class="fechas">
+                <div class="fecha">
+                    <div class="etiqueta"><p style="margin-left:-1px;">Desde:</p></div>
+                    <div class="grupo_combos">
+			   <label for="desde"></label>
+                        <input type="text" id="desde" name="desde" size="9" value="01/01/2022">
+                    </div>
+                </div>
+                <div class="fecha">
+                    <div class="etiqueta"><p style="margin-left:-1px;">Hasta:</p></div>
+                    <div class="grupo_combos">
+			   <label for="hasta"></label>
+                        <input type="text" id="hasta" name="hasta" size="9" value="31/12/2022">
+                    </div>
+                </div>
+            </div>
+
+            <div class="consultar" style="margin-top:11px;">
+                <p>
+                    <input type="button" id="btnBuscar" name="btnBuscar" class="btnbuscar" value="" onclick="return Opciones('R','frmDiarias','diarias');"/>
+		      <input type="button" id="btnExportacionXls" name="btnExportacionXls" class="btnxlsx" value="" onclick="return Opciones('ENR','frmDiarias','diarias');"/>
+		      <input type="button" id="btnExportacionCsv" name="btnExportacionCsv" class="btncsv" value="" onclick="return Opciones('CSVNR','frmDiarias','diarias');"/>
+		      <input type="button" id="btnGrafico" name="btnGrafico" class="btngrafico" value="" onclick="return Opciones('GRR','frmDiarias','diarias');"/>	                   
+                </p>    
+            </div>
+        </div>
+        <div class="opciones_salida"></div>
+    </div>
+
+
+
+
+	
+
+
+	
+	
+	
+   <h1 class="categoria">Monto negociado en acciones (millones S/) - Promedio diario</h1>	
+        <div class="url">
+ https://estadisticas.bcrp.gob.pe/estadisticas/series/diarias/resultados/PD04696MD/html/2022-01-01/2022-12-31/    
+        </div>
+
+    
+
+	
+		
+	
+	
+	
+    
+<div class="barra-resultados">       
+    <table title="" summary="" class="series">
+        <tr>
+            <th class="cabecera">Fecha</th>
+                        <th class="cabecera">
+				Indicadores bursátiles - Monto negociado en acciones (millones S/) - Promedio diario			</th>
+                    </tr>
+
+
+   	
+	
+	
+	
+	
+	
+	
+	
+		
+		
+                <tr>
+            <td class="periodo">
+            <b>03Ene22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            16.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>04Ene22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            84.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>05Ene22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            65.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>06Ene22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            149.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>07Ene22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            61.1            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>10Ene22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            48.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>11Ene22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            57.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>12Ene22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            44.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>13Ene22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            28.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>14Ene22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            31.0            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>17Ene22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            5.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>18Ene22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            14.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>19Ene22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            34.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>20Ene22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            40.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>21Ene22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            73.5            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>24Ene22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>25Ene22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            23.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>26Ene22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            27.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>27Ene22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            22.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>28Ene22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            28.4            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>31Ene22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            28.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>01Feb22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            24.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>02Feb22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            39.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>03Feb22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            44.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>04Feb22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            29.3            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>07Feb22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            32.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>08Feb22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            66.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>09Feb22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            52.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>10Feb22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            41.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>11Feb22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18.1            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>14Feb22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            31.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>15Feb22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            41.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>16Feb22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            127.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>17Feb22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            27.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>18Feb22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            15.6            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>21Feb22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            2.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>22Feb22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>23Feb22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            15.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>24Feb22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            24.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>25Feb22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            26.5            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>28Feb22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            25.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>01Mar22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            15.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>02Mar22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            19.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>03Mar22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            29.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>04Mar22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            25.6            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>07Mar22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            26.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>08Mar22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            43.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>09Mar22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>10Mar22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            36.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>11Mar22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            31.1            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>14Mar22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            27.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>15Mar22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            28.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>16Mar22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            52.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>17Mar22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            46.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>18Mar22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            34.2            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>21Mar22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            12.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>22Mar22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            30.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>23Mar22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            42.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>24Mar22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            169.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>25Mar22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            58.4            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>28Mar22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            8.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>29Mar22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>30Mar22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            85.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>31Mar22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            37.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>01Abr22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            36.9            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>04Abr22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            53.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>05Abr22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            9.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>06Abr22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            31.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>07Abr22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            31.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>08Abr22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            57.5            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>11Abr22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            52.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>12Abr22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            42.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>13Abr22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            46.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>14Abr22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            n.d.            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>15Abr22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            n.d.            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>18Abr22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            31.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>19Abr22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            55.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>20Abr22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            49.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>21Abr22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            48.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>22Abr22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            37.7            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>25Abr22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            27.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>26Abr22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            33.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>27Abr22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            24.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>28Abr22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            78.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>29Abr22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            37.6            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>02May22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            15.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>03May22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            10.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>04May22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>05May22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            36.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>06May22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            30.9            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>09May22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            11.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>10May22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            15.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>11May22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            37.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>12May22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            45.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>13May22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            14.3            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>16May22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            8.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>17May22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            36.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>18May22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            16.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>19May22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            25.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>20May22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            14.3            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>23May22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            25.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>24May22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>25May22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            6.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>26May22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            31.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>27May22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            15.6            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>30May22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            1.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>31May22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            24.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>01Jun22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            7.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>02Jun22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            12.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>03Jun22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            5.5            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>06Jun22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            32.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>07Jun22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            12.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>08Jun22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            39.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>09Jun22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            5.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>10Jun22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            13.0            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>13Jun22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            24.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>14Jun22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            5.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>15Jun22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            6.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>16Jun22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            7.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>17Jun22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            11.5            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>20Jun22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            0.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>21Jun22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            22.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>22Jun22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            19.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>23Jun22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            9.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>24Jun22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            22.6            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>27Jun22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            1.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>28Jun22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            13.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>29Jun22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            n.d.            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>30Jun22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            9.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>01Jul22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            3.9            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>04Jul22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            1.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>05Jul22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            4.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>06Jul22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            5.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>07Jul22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            5.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>08Jul22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            13.5            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>11Jul22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            2.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>12Jul22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            8.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>13Jul22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            3.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>14Jul22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            7.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>15Jul22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            2.9            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>18Jul22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            256.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>19Jul22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            50.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>20Jul22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            31.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>21Jul22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            27.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>22Jul22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            16.2            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>25Jul22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            8.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>26Jul22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            8.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>27Jul22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            3.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>28Jul22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            n.d.            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>29Jul22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            n.d.            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>01Ago22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            6.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>02Ago22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            9.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>03Ago22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            15.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>04Ago22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            13.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>05Ago22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            10.8            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>08Ago22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            23.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>09Ago22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            16.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>10Ago22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            131.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>11Ago22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            49.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>12Ago22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            9.9            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>15Ago22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            15.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>16Ago22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            8.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>17Ago22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>18Ago22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            4.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>19Ago22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            14.6            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>22Ago22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            10.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>23Ago22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            16.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>24Ago22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            2.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>25Ago22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            3.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>26Ago22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            9.3            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>29Ago22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            19.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>30Ago22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            n.d.            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>31Ago22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            15.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>01Set22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            8.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>02Set22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            5.2            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>05Set22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            1.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>06Set22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            4.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>07Set22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            3.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>08Set22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            12.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>09Set22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            19.7            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>12Set22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            31.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>13Set22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            146.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>14Set22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            5.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>15Set22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            14.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>16Set22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18.9            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>19Set22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            77.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>20Set22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            35.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>21Set22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            387.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>22Set22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            6.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>23Set22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            31.5            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>26Set22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            10.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>27Set22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            32.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>28Set22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            3.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>29Set22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            105.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>30Set22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            11.3            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>03Oct22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            10.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>04Oct22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            424.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>05Oct22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            14.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>06Oct22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            94.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>07Oct22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            5.4            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>10Oct22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            2.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>11Oct22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            14.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>12Oct22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            3.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>13Oct22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            61.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>14Oct22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            3.8            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>17Oct22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            19.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>18Oct22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            47.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>19Oct22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>20Oct22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            11.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>21Oct22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            25.2            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>24Oct22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            27.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>25Oct22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            15.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>26Oct22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            17.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>27Oct22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            29.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>28Oct22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            12.4            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>31Oct22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            94.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>01Nov22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            n.d.            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>02Nov22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            25.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>03Nov22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            52.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>04Nov22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            93.3            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>07Nov22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            17.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>08Nov22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>09Nov22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            14.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>10Nov22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            112.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>11Nov22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            162.1            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>14Nov22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            42.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>15Nov22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            30.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>16Nov22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            36.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>17Nov22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            64.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>18Nov22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            16.5            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>21Nov22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            12.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>22Nov22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            17.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>23Nov22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            35.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>24Nov22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            19.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>25Nov22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            262.0            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>28Nov22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            228.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>29Nov22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            10.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>30Nov22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            38.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>01Dic22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            49.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>02Dic22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            11.9            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>05Dic22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>06Dic22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            14.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>07Dic22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            12.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>08Dic22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            n.d.            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>09Dic22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            n.d.            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>12Dic22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>13Dic22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            10.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>14Dic22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            29.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>15Dic22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            22.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>16Dic22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            25.1            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>19Dic22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>20Dic22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            56.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>21Dic22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            30.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>22Dic22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            55.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>23Dic22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            69.6            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>26Dic22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            0.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>27Dic22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            45.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>28Dic22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            260.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>29Dic22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            48.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>30Dic22</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            33.3            </td>
+                    </tr>
+            </table>
+
+	
+	
+</div>
+	
+		
+	
+    <table title="" summary="">
+	
+	
+	
+
+
+	
+	
+	
+    <tr>
+        <td style="text-align: right">
+            <input type="hidden" name="format" id="format" value=""/>
+            <input type="hidden" name="accion" id="accion" value=""/>
+            <input type="hidden" name="sufijo" id="sufijo" value="30Dic22"/>
+            <input type="hidden" name="anio11" id="anio11" value="2022"/>
+            <input type="hidden" name="anio22" id="anio22" value="2022"/>
+            <input type="hidden" name="mes11" id="mes11" value="01"/>
+            <input type="hidden" name="mes22" id="mes22" value="12"/>
+            <input type="hidden" name="dia11" id="dia11" value="01"/>
+            <input type="hidden" name="dia22" id="dia22" value="31"/>
+            <input type="hidden" name="codigos" id="codigos" value="'PD04696MD'"/>
+	    <input type="hidden" id="codigosurl" name="codigosurl" value="PD04696MD" />
+	     <input type="hidden" name="grupos" id="grupos" value=""/>
+	     <input type="hidden" id="idiomas" name="idiomas" value="resultados" />
+        </td>
+    </tr>
+    </table>
+
+	
+
+	
+	
+</form>
+
+
+
+  </td>
+</tr>
+
+</table>
+</div>
+
+
+</body>
+		<div class="footer-personalizado" id="footer-personalizado-principal">
+			<address class="wrapper-footer-sections datosfooter">
+			Jr. Santa Rosa 441-445, Lima-1, Perú <br>
+			Teléfono:  (511) 613 2000
+			</address>
+		</div>
+
+<script language="javascript" type="text/javascript">
+	if(document.forms[0])
+	update_counter(document.forms[0].id);
+
+	$("#button-back-nav-link").on("click", function(e) {
+		//history.go(-1);
+		console.log(document.referrer);
+		history.back();
+	});
+</script>
+
+</html>
+

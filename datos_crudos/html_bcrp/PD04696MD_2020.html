@@ -1,0 +1,3356 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+<head><script src="/oly-Almost-That-hane-Sey-a-sleepe-Atter-Macduffe" async></script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<script> if(top == self) { document.documentElement.style.display='block'}
+else { top.location = self.location; } </script>
+
+
+
+<link href="/estadisticas/series/css/ajax_upload.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/estadisticas/series/css/jquery-1.7.2.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/estadisticas/series/css/back.css?20261122002028" media="screen" rel="stylesheet" type="text/css" />
+<link href="/estadisticas/series/css/nav.css?20261122002028" media="screen" rel="stylesheet" type="text/css" />
+
+
+
+<link href="/estadisticas/series/css/series-estadisticas.css?20261122002028" media="screen" rel="stylesheet" type="text/css" />
+<link href="/estadisticas/series/css/estilo.css?20261122002028" media="screen" rel="stylesheet" type="text/css" />
+
+<!--[if lt IE 9]>
+	<link href="/estadisticas/series/css/series-estadisticas-ie.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="/estadisticas/series/css/estilo-ie.css" media="screen" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+<!--[if lte IE 8]>
+    <link href="/estadisticas/series/css/series-estadisticas-ie.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="/estadisticas/series/css/estilo-ie.css" media="screen" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+
+
+
+
+<!--[if gt IE 7]>
+	<link href="/estadisticas/series/css/series-estadisticas.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="/estadisticas/series/css/estilo.css" media="screen" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+<!--[if gte IE 8]>
+	<link href="/estadisticas/series/css/series-estadisticas.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="/estadisticas/series/css/estilo.css" media="screen" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+
+<link href="/estadisticas/series/css/tcg-elevator/css/jquery.tcg-elevator.css" media="screen" rel="stylesheet" type="text/css" />
+	
+<script type="text/javascript" src="/estadisticas/series/js/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="/estadisticas/series/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="/estadisticas/series/js/bootstrap/js/bootstrap.js"></script>
+	
+<script type="text/javascript" src="/estadisticas/series/js/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="/estadisticas/series/js/jquery.ui.core.js"></script>
+<script type="text/javascript" src="/estadisticas/series/js/jquery.ui.widget.js"></script>
+<script type="text/javascript" src="/estadisticas/series/js/ajax_upload.js" ></script>
+
+
+<script type="text/javascript" src="/estadisticas/series/js/tcg-elevator/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+	var jQuery_1_12_4 = $.noConflict(true);
+</script>
+<script type="text/javascript" src="/estadisticas/series/js/tcg-elevator/js/jquery.tcg-elevator.js"></script>
+
+<script>
+
+$(document).ready(function(){
+	//$('.tcg-elevator').tcgElevator();
+
+    if ($.fn.tcgElevator) {
+        $('.tcg-elevator').tcgElevator();
+
+
+		$('.elevator').tcgElevator({		
+			toggleSelector: '.panel-heading',
+			contentSelector: '.panel-body',
+			/*
+			speed: 500,
+			openingSpeed: 500,
+			closingSpeed: 1000,
+			*/  
+			openClass: 'open',
+			openingClass: 'opening',
+			closingClass: 'closing'
+		});
+
+    } 
+
+
+	var closed = true;
+	$('.toggle-all').click(function(e){
+		var functionToCall = closed ? 'open' : 'close';
+		closed = !closed;
+		$('.tcg-elevator').tcgElevator(functionToCall);
+	})
+	
+
+	$(".toggle-all").click(
+		function() {
+			if($(this).hasClass("cls-iconos-textos")) {
+			   $(this).removeClass("cls-iconos-textos");
+			   $(this).addClass("cls-iconos-textos-negativo");
+			} else {
+				$(this).removeClass("cls-iconos-textos-negativo");
+			    $(this).addClass("cls-iconos-textos");
+			}
+		}
+	);
+
+	
+})
+
+
+</script>
+
+
+<!-- <script type="text/javascript" src="/estadisticas/series/js/jquery.ui.datepicker_ing.js"></script> -->
+<!-- <script type="text/javascript" src="/estadisticas/series/js/jquery.ui.datepicker_esp.js"></script> -->
+
+<!-- <script type="text/javascript" src="/estadisticas/series/js/jquery.ui.datepicker.js"></script> -->
+
+<script type="text/javascript" src="/estadisticas/series/js/jquery.ui.datepicker_esp.js"></script>
+
+
+
+<script type="text/javascript" src="/estadisticas/series/js/estadisticas.js?20261122002028"></script>
+<script type="text/javascript" src="/estadisticas/series/js/js.js?20261122002028"></script>
+<script type="text/javascript" src="/estadisticas/series/js/validCampoFranz.js"></script>
+
+
+<script type="text/javascript" src="/estadisticas/series/js/funciones-personalizadas.js"></script>
+
+
+<link href="/estadisticas/series/css/font-awesome/css/font-awesome.css" media="screen" rel="stylesheet" type="text/css" />
+
+
+
+
+<script type="text/javascript" src="/estadisticas/series/js/jalert/jquery.ui.draggable.js"></script>
+<script type="text/javascript" src="/estadisticas/series/js/jalert/jquery.alerts.js"></script>
+
+
+<link href="/estadisticas/series/js/jalert/jquery.alerts.css" media="screen" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+		
+
+
+<script language="JavaScript">
+$(function() {
+	
+	    if ($('#desde').val() != undefined)
+		{	
+			$("#desde").datepicker({
+					changeMonth: true,
+					changeYear: true,
+					showOn: "button",		  
+					buttonImage: "https://estadisticas.bcrp.gob.pe/estadisticas/series/js/images/calendar.gif",
+					buttonImageOnly: true
+			});
+		}
+
+	    if ($('#hasta').val() != undefined)
+		{			
+			$("#hasta").datepicker({
+					changeMonth: true,
+					changeYear: true,
+					showOn: "button",
+					buttonImage: "https://estadisticas.bcrp.gob.pe/estadisticas/series/js/images/calendar.gif",
+					buttonImageOnly: true
+			});
+		}
+
+	    if ($('#fecha_creacion').val() != undefined)
+		{			
+			$("#fecha_creacion").datepicker({
+					changeMonth: true,
+					changeYear: true,
+					showOn: "button",
+					buttonImage: "https://estadisticas.bcrp.gob.pe/estadisticas/series/js/images/calendar.gif",
+					buttonImageOnly: true
+			});
+		}
+		
+});
+
+
+
+
+
+
+</script> 
+
+
+<script type="text/javascript">
+
+// Bloquear history
+/*history.pushState(null, null, location.href);
+    window.onpopstate = function () {
+        history.go(1);
+    };*/
+	
+</script>  
+
+
+<meta name="keywords" content="Monto negociado en acciones (millones S/) - Promedio diario" />
+<meta name="description" content="Monto negociado en acciones (millones S/) - Promedio diario" />
+
+<title>Monto negociado en acciones (millones S/) - Promedio diario</title>
+</head>
+
+<script>
+	$(document).ready(function() {
+
+
+		if ($('#txtbuscador').val() != undefined) {
+			$('#txtbuscador').validCampoFranz(' abcdefghijklmnñopqrstuvwxyzáéíóú$1234567890');
+		}
+
+
+		//$('#txtbuscar').on( 'keyup change', function () {   // for text boxes
+		$('#txtbuscador').on('keypress', function(event) { // for text boxes
+
+
+
+			if (event.which == 13) {
+				v = $("#txtbuscador").val();
+
+				if (v != '') {
+
+					var filtropalabras = /^[0-9a-zA-Z$áéíóúñ ]+$/;
+					// utilizamos test para comprobar si el parametro valor cumple la regla
+					if (!filtropalabras.test(v)) {
+						alert('La texto a buscar contiene un caracter no permitido.');
+						return false;
+					}
+
+
+
+					//dataTable.search(v).draw();
+					//document.frmBuscador.action ="/estadisticas/series/diarias/resultados/PD04696MD/html/2020-01-01/2020-12-31";
+					document.frmBuscador.action = "https://estadisticas.bcrp.gob.pe/estadisticas/series/buscador";
+					document.frmBuscador.submit();
+
+				} else {
+					alert('Ingresar texto a buscar');
+					return false;
+				}
+			}
+
+			//dataTable.search( $(this).val() ).draw();
+
+		});
+
+
+		$('#btnbuscador').on('click', function(event) { // for text boxes
+
+
+
+			v = $("#txtbuscador").val();
+
+			if (v != '') {
+
+
+				var filtropalabras = /^[0-9a-zA-Z$áéíóúñ ]+$/;
+				// utilizamos test para comprobar si el parametro valor cumple la regla
+				if (!filtropalabras.test(v)) {
+					alert('La texto a buscar contiene un caracter no permitido.');
+					return false;
+				}
+
+
+				dataTable.search(v).draw();
+
+				//document.frmBuscador.action ="/estadisticas/series/diarias/resultados/PD04696MD/html/2020-01-01/2020-12-31";
+				document.frmBuscador.action = "https://estadisticas.bcrp.gob.pe/estadisticas/series/buscador";
+				document.frmBuscador.submit();
+
+			} else {
+				alert('Ingresar texto a buscar');
+				return false;
+			}
+
+			//dataTable.search( $(this).val() ).draw();
+
+		});
+
+
+	});
+</script>
+
+
+
+
+<body>
+
+
+
+
+
+	<!-- Google Tag Manager -->
+
+	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-T2QFRJ"
+
+			height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+	<script>
+		(function(w, d, s, l, i) {
+			w[l] = w[l] || [];
+			w[l].push({
+				'gtm.start':
+
+					new Date().getTime(),
+				event: 'gtm.js'
+			});
+			var f = d.getElementsByTagName(s)[0],
+
+				j = d.createElement(s),
+				dl = l != 'dataLayer' ? '&l=' + l : '';
+			j.async = true;
+			j.src =
+
+				'//www.googletagmanager.com/gtm.js?id=' + i + dl;
+			f.parentNode.insertBefore(j, f);
+
+		})(window, document, 'script', 'dataLayer', 'GTM-T2QFRJ');
+	</script>
+
+	<!-- End Google Tag Manager -->
+
+
+	<script>
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-83099512-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+
+
+
+
+
+	
+			<div class="header">
+
+				<div class="textocabecera">
+					<div class="logocbm">
+						<a href="http://www.bcrp.gob.pe" target="_blank"><img alt="" src="/estadisticas/series/images/logo-70-espacio.png" id="logobcr"></a>
+					</div>
+					<div class="logoytitulo">
+						<!-- <div class="titlogobcrp"><span class="titulobcrpdata">BCRPData</span><br/>BANCO CENTRAL DE RESERVA DEL PERÚ<br/></div> -->
+						<div class="titlogobcrp">
+							<span class="titulobcrpdata">BCRPData</span><br />
+							<span class="subtitulobcrpdata_1">BANCO CENTRAL DE RESERVA DEL PERÚ</span><br />
+							<span class="subtitulobcrpdata_2">Gerencia Central de Estudios Económicos</span>
+							<br />
+						</div>
+					</div>
+				</div>
+
+
+			
+
+			<ul class="top">
+				
+
+
+
+
+
+					<div class="hidden">
+						<h1>
+							Monto negociado en acciones (millones S/) - Promedio diario						</h1>
+					</div>
+											<li><a title="Suscribirse" href="/estadisticas/series/suscribirse">Suscripción</a>&nbsp;|</li>
+<li><a title="Iniciar Sesión" href="/estadisticas/series/login">Iniciar Sesión</a></li>
+
+					
+
+				
+
+
+
+
+							</ul>
+
+
+
+			
+
+				<form id="frmBuscador" name="frmBuscador" action="/estadisticas/series/buscador" method="post">
+					<div class="input-group input-group-lg div-buscador">
+						<input id="txtbuscador" name="txtbuscador" type="text" class="form-control-buscador" placeholder="Buscar..." autocomplete="off" value="">
+						<span class="input-group-btn">
+							<button id="btnbuscador" name="btnbuscador" type="submit" class="btn btn-default btn-buscador-cabecera" style="background-color:#687f9f;color:white" onclick="Opciones('BU')"><i class="fa fa-search"></i></button>
+						</span>
+					</div>
+					<input type="hidden" id="accion" name="accion" value="buscar" />
+				</form>
+
+			
+
+			<div class="hidden">
+				<h1>
+					Monto negociado en acciones (millones S/) - Promedio diario				</h1>
+			</div>
+			
+			
+			</div>
+
+			
+
+
+
+			
+<div class="menu-principal">
+	<div class="menu">
+		<ul>
+			<li><a href="/estadisticas/series/index"  target="_self">Inicio</a></li><li><a href="http://www.bcrp.gob.pe/docs/Estadisticas/Calendario-Estadisticas.pdf"  target="_blank">Calendario de Difusión</a></li><li><a href="https://www.bcrp.gob.pe/estadisticas/cuadros-de-la-nota-semanal.html"  target="_blank">Cuadros Estadísticos</a></li><li><a href="#"  target="_self">Guías</a><ul><li><a href="/estadisticas/series/documentos/bcrpdataguiadeuso.pdf"  target="_blank">Uso de BCRPData</a></li><li><a href="/estadisticas/series/documentos/bcrpdataapi.pdf"  target="_blank">API para Desarrolladores</a></li><li><a href="/estadisticas/series/documentos/bcrpdataaddin.pdf"  target="_blank">Add-In para Excel</a></li></ul></li><li><a href="#"  target="_self">Acerca de</a><ul><li><a href="/estadisticas/series/ayuda/bcrpdata"  target="_self">BCRPData</a></li><li><a href="/estadisticas/series/ayuda/condiciones-de-uso"  target="_self">Condiciones de Uso</a></li><li><a href="/estadisticas/series/documentos/bcrpdatasuscribirse.pdf"  target="_blank">Ventajas de la Suscripción</a></li></ul></li>				<li class="button-back-nav">
+					<a id="button-back-nav-link">Retroceder</a>
+				</li>
+					</ul>
+	</div>
+</div>
+
+
+
+			<div class="contenido">
+				
+
+<table border="0" class="estilo-tabla-index" cellpadding="0" cellspacing="0">
+<tr>     
+	<td id="contenedor-barra-menu" valign="top"   class="td-index">
+	<div id="barra-lateral" >
+		  
+
+<div id="menu-izquierda-dinamico">
+<h4 class="titulo-izquierda"><a href="#"  class="titulo-h4" target="_self">Consulta de Series</a></h4><ul class="forma-vineta"><li class="forma-separar"><a class="forma-url" href="/estadisticas/series/index"  target="_self">Por Categoría</a></li><li class="forma-separar"><a class="forma-url" href="/estadisticas/series/buscador"  target="_self">Por Series</a></li></ul><h4 class="titulo-izquierda"><a href="#"  class="titulo-h4" target="_self">Herramientas</a></h4><ul class="forma-vineta"><li class="forma-separar"><a class="forma-url" href="/estadisticas/series/lista/listadovalido"  target="_self">Listas Personalizadas</a></li><li class="forma-separar"><a class="forma-url" href="/estadisticas/series/ayuda/addin"  target="_self">Add-In para Excel</a></li><li class="forma-separar"><a class="forma-url" href="/estadisticas/series/ayuda/api"  target="_self">API para Desarrolladores</a></li><li class="forma-separar"><a class="forma-url" href="/estadisticas/series/ayuda/app"  target="_self">App para Móviles</a></li><li class="forma-separar"><a class="forma-url" href="/estadisticas/series/ayuda/metadatos"  target="_self">Metadatos</a></li></ul><h4 class="titulo-izquierda"><a href="#"  class="titulo-h4" target="_self">Encuesta de Expectativas</a></h4><ul class="forma-vineta"><li class="forma-separar"><a class="forma-url" href="https://www.bcrp.gob.pe/docs/Estadisticas/Encuestas/expectativas-inflacion.xlsx"  target="_blank">Inflación</a></li><li class="forma-separar"><a class="forma-url" href="https://www.bcrp.gob.pe/docs/Estadisticas/Encuestas/expectativas-pbi.xlsx"  target="_blank">Producto Bruto Interno</a></li><li class="forma-separar"><a class="forma-url" href="https://www.bcrp.gob.pe/docs/Estadisticas/Encuestas/expectativas-tipo-de-cambio.xlsx"  target="_blank">Tipo de Cambio</a></li><li class="forma-separar"><a class="forma-url" href="https://www.bcrp.gob.pe/docs/Estadisticas/Encuestas/expectativas-series-de-indices.xlsx"  target="_blank">Índices de confianza empresarial</a></li></ul><h4 class="titulo-izquierda"><a href="/estadisticas/series/contactenos"  class="titulo-h4" target="_self">Contáctenos</a></h4>	
+
+
+
+</div>
+	</div>	  
+	</td>
+
+  
+  
+<!--<td style="padding-left:10px;" valign="top">-->
+<td class="centro-contenido" valign="top">
+
+
+
+
+
+<div class="nav-links">
+	<ul>
+					<li>
+				<a href="/estadisticas/series">Inicio</a>
+			</li>
+							<li>
+						<span>/</span>
+						<a href="/estadisticas/series/diarias">Series Diarias</a>
+					</li>
+										<li>
+						<span>/</span>
+						<span class="only-title">Ver Tabla</span>
+					</li>
+						</ul>
+</div>
+
+
+
+<form id="frmDiarias" action="" method="post">
+    <div class="controles">
+        <div class="opciones_consulta">
+            <div class="fechas">
+                <div class="fecha">
+                    <div class="etiqueta"><p style="margin-left:-1px;">Desde:</p></div>
+                    <div class="grupo_combos">
+			   <label for="desde"></label>
+                        <input type="text" id="desde" name="desde" size="9" value="01/01/2020">
+                    </div>
+                </div>
+                <div class="fecha">
+                    <div class="etiqueta"><p style="margin-left:-1px;">Hasta:</p></div>
+                    <div class="grupo_combos">
+			   <label for="hasta"></label>
+                        <input type="text" id="hasta" name="hasta" size="9" value="31/12/2020">
+                    </div>
+                </div>
+            </div>
+
+            <div class="consultar" style="margin-top:11px;">
+                <p>
+                    <input type="button" id="btnBuscar" name="btnBuscar" class="btnbuscar" value="" onclick="return Opciones('R','frmDiarias','diarias');"/>
+		      <input type="button" id="btnExportacionXls" name="btnExportacionXls" class="btnxlsx" value="" onclick="return Opciones('ENR','frmDiarias','diarias');"/>
+		      <input type="button" id="btnExportacionCsv" name="btnExportacionCsv" class="btncsv" value="" onclick="return Opciones('CSVNR','frmDiarias','diarias');"/>
+		      <input type="button" id="btnGrafico" name="btnGrafico" class="btngrafico" value="" onclick="return Opciones('GRR','frmDiarias','diarias');"/>	                   
+                </p>    
+            </div>
+        </div>
+        <div class="opciones_salida"></div>
+    </div>
+
+
+
+
+	
+
+
+	
+	
+	
+   <h1 class="categoria">Monto negociado en acciones (millones S/) - Promedio diario</h1>	
+        <div class="url">
+ https://estadisticas.bcrp.gob.pe/estadisticas/series/diarias/resultados/PD04696MD/html/2020-01-01/2020-12-31/    
+        </div>
+
+    
+
+	
+		
+	
+	
+	
+    
+<div class="barra-resultados">       
+    <table title="" summary="" class="series">
+        <tr>
+            <th class="cabecera">Fecha</th>
+                        <th class="cabecera">
+				Indicadores bursátiles - Monto negociado en acciones (millones S/) - Promedio diario			</th>
+                    </tr>
+
+
+   	
+	
+	
+	
+	
+	
+	
+	
+		
+		
+                <tr>
+            <td class="periodo">
+            <b>01Ene20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            0.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>02Ene20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            30.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>03Ene20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            794.2            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>06Ene20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            24.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>07Ene20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            34.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>08Ene20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            19.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>09Ene20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            38.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>10Ene20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            40.1            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>13Ene20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            23.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>14Ene20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            23.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>15Ene20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            34.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>16Ene20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            14.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>17Ene20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            30.3            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>20Ene20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            3.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>21Ene20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            41.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>22Ene20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            57.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>23Ene20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            36.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>24Ene20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            28.6            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>27Ene20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            53.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>28Ene20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>29Ene20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            43.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>30Ene20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            19.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>31Ene20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            53.7            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>03Feb20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>04Feb20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            42.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>05Feb20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            16.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>06Feb20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            50.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>07Feb20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            10.3            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>10Feb20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            11.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>11Feb20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            16.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>12Feb20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            59.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>13Feb20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            15.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>14Feb20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            13.1            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>17Feb20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            4.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>18Feb20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            63.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>19Feb20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            29.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>20Feb20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            76.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>21Feb20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            31.4            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>24Feb20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            68.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>25Feb20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            78.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>26Feb20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            58.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>27Feb20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            32.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>28Feb20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            112.7            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>02Mar20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            22.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>03Mar20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            25.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>04Mar20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            19.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>05Mar20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            25.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>06Mar20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            53.3            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>09Mar20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            28.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>10Mar20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            37.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>11Mar20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            47.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>12Mar20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            38.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>13Mar20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            32.1            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>16Mar20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>17Mar20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            26.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>18Mar20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            35.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>19Mar20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            24.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>20Mar20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21.0            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>23Mar20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            29.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>24Mar20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            85.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>25Mar20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            52.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>26Mar20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            193.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>27Mar20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            33.8            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>30Mar20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            3580.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>31Mar20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            42.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>01Abr20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>02Abr20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            13.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>03Abr20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            19.2            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>06Abr20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            26.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>07Abr20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            43.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>08Abr20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            26.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>09Abr20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            0.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>10Abr20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            0.0            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>13Abr20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            26.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>14Abr20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            48.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>15Abr20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            33.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>16Abr20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            26.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>17Abr20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            27.8            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>20Abr20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            22.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>21Abr20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            11.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>22Abr20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            23.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>23Abr20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            29.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>24Abr20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            22.2            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>27Abr20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>28Abr20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            14.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>29Abr20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            27.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>30Abr20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            13.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>01May20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            0.0            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>04May20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            14.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>05May20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>06May20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            19.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>07May20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            46.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>08May20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            47.1            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>11May20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            44.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>12May20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            70.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>13May20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            25.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>14May20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            22.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>15May20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            40.8            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>18May20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            24.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>19May20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            22.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>20May20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>21May20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            35.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>22May20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            12.6            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>25May20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            1.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>26May20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            16.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>27May20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            42.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>28May20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            22.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>29May20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            74.3            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>01Jun20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            46.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>02Jun20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            41.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>03Jun20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            64.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>04Jun20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            32.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>05Jun20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            103.6            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>08Jun20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            30.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>09Jun20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            26.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>10Jun20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            38.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>11Jun20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            25.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>12Jun20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            26.3            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>15Jun20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            15.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>16Jun20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            32.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>17Jun20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            10.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>18Jun20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            16.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>19Jun20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            82.3            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>22Jun20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            16.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>23Jun20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            16.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>24Jun20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            11.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>25Jun20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            20.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>26Jun20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18.3            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>29Jun20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            0.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>30Jun20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>01Jul20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            35.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>02Jul20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            38.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>03Jul20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            7.6            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>06Jul20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            13.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>07Jul20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            10.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>08Jul20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            15.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>09Jul20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            16.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>10Jul20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            28.9            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>13Jul20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            27.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>14Jul20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            24.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>15Jul20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            17.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>16Jul20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            14.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>17Jul20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            7.2            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>20Jul20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            7.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>21Jul20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            10.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>22Jul20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            16.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>23Jul20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>24Jul20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            14.3            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>27Jul20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>28Jul20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            0.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>29Jul20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            33.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>30Jul20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            23.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>31Jul20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            29.7            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>03Ago20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            16.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>04Ago20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            9.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>05Ago20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            47.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>06Ago20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            23.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>07Ago20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            19.7            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>10Ago20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            71.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>11Ago20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            30.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>12Ago20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            17.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>13Ago20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>14Ago20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            13.3            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>17Ago20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            16.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>18Ago20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            19.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>19Ago20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            13.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>20Ago20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            22.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>21Ago20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            17.5            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>24Ago20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            25.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>25Ago20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            12.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>26Ago20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            38.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>27Ago20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            28.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>28Ago20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            35.2            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>31Ago20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            34.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>01Set20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            39.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>02Set20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            68.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>03Set20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            36.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>04Set20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            24.6            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>07Set20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            2.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>08Set20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            22.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>09Set20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            17.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>10Set20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            17.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>11Set20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21.3            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>14Set20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>15Set20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            15.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>16Set20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            24.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>17Set20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            29.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>18Set20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            74.1            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>21Set20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            19.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>22Set20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            8.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>23Set20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            14.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>24Set20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            40.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>25Set20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            14.0            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>28Set20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            7.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>29Set20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            14.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>30Set20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            39.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>01Oct20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            11.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>02Oct20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            25.9            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>05Oct20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>06Oct20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            36.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>07Oct20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>08Oct20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            30.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>09Oct20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            5.1            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>12Oct20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            9.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>13Oct20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            29.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>14Oct20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>15Oct20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            15.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>16Oct20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            38.8            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>19Oct20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            16.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>20Oct20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            27.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>21Oct20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            19.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>22Oct20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            8.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>23Oct20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            16.1            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>26Oct20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            13.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>27Oct20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            14.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>28Oct20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            14.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>29Oct20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            25.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>30Oct20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            18.2            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>02Nov20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            6.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>03Nov20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            41.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>04Nov20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            37.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>05Nov20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            44.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>06Nov20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            44.3            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>09Nov20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            62.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>10Nov20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            45.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>11Nov20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            30.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>12Nov20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            27.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>13Nov20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            19.8            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>16Nov20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            62.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>17Nov20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            36.3            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>18Nov20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            37.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>19Nov20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            25.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>20Nov20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            17.9            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>23Nov20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>24Nov20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            81.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>25Nov20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            55.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>26Nov20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            6.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>27Nov20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            21.7            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>30Nov20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            58.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>01Dic20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            98.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>02Dic20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            105.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>03Dic20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            68.0            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>04Dic20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            61.3            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>07Dic20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            27.4            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>08Dic20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            n.d.            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>09Dic20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            37.1            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>10Dic20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            59.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>11Dic20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            60.5            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>14Dic20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            22.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>15Dic20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            31.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>16Dic20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            48.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>17Dic20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            40.2            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>18Dic20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            28.3            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>21Dic20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            62.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>22Dic20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            37.9            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>23Dic20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            33.6            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>24Dic20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            9.7            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>25Dic20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            n.d.            </td>
+                    </tr>
+                </tr>
+                </tr>
+                <tr>
+            <td class="periodo">
+            <b>28Dic20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            50.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>29Dic20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            25.8            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>30Dic20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            35.5            </td>
+                    </tr>
+                <tr>
+            <td class="periodo">
+            <b>31Dic20</b>            </td>
+			
+			
+			
+			
+                        <td class="dato">
+            31.3            </td>
+                    </tr>
+            </table>
+
+	
+	
+</div>
+	
+		
+	
+    <table title="" summary="">
+	
+	
+	
+
+
+	
+	
+	
+    <tr>
+        <td style="text-align: right">
+            <input type="hidden" name="format" id="format" value=""/>
+            <input type="hidden" name="accion" id="accion" value=""/>
+            <input type="hidden" name="sufijo" id="sufijo" value="31Dic20"/>
+            <input type="hidden" name="anio11" id="anio11" value="2020"/>
+            <input type="hidden" name="anio22" id="anio22" value="2020"/>
+            <input type="hidden" name="mes11" id="mes11" value="01"/>
+            <input type="hidden" name="mes22" id="mes22" value="12"/>
+            <input type="hidden" name="dia11" id="dia11" value="01"/>
+            <input type="hidden" name="dia22" id="dia22" value="31"/>
+            <input type="hidden" name="codigos" id="codigos" value="'PD04696MD'"/>
+	    <input type="hidden" id="codigosurl" name="codigosurl" value="PD04696MD" />
+	     <input type="hidden" name="grupos" id="grupos" value=""/>
+	     <input type="hidden" id="idiomas" name="idiomas" value="resultados" />
+        </td>
+    </tr>
+    </table>
+
+	
+
+	
+	
+</form>
+
+
+
+  </td>
+</tr>
+
+</table>
+</div>
+
+
+</body>
+		<div class="footer-personalizado" id="footer-personalizado-principal">
+			<address class="wrapper-footer-sections datosfooter">
+			Jr. Santa Rosa 441-445, Lima-1, Perú <br>
+			Teléfono:  (511) 613 2000
+			</address>
+		</div>
+
+<script language="javascript" type="text/javascript">
+	if(document.forms[0])
+	update_counter(document.forms[0].id);
+
+	$("#button-back-nav-link").on("click", function(e) {
+		//history.go(-1);
+		console.log(document.referrer);
+		history.back();
+	});
+</script>
+
+</html>
+

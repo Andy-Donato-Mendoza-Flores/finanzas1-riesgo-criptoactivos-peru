@@ -1,0 +1,198 @@
+2026-11-22 00:09:58 | 01_extraccion_api | Yahoo Finance | BTC-USD | filas=3226 | HTTP no expuesto por yfinance | archivo=yahoo_btc_usd_2024200509B.csv
+2026-11-22 00:10:00 | 01_extraccion_api | Yahoo Finance | ETH-USD | filas=3226 | HTTP no expuesto por yfinance | archivo=yahoo_eth_usd_2024200509B.csv
+2026-11-22 00:10:02 | 01_extraccion_api | CoinGecko | sin clave Demo: se intenta el acceso público (límite más bajo)
+2026-11-22 00:10:05 | 01_extraccion_api | CoinGecko bitcoin | intento 1 | HTTP 200 | https://api.coingecko.com/api/v3/coins/bitcoin/market_chart/range?vs_currency=usd&from=1767225600&to=1793491199
+2026-11-22 00:10:06 | 01_extraccion_api | CoinGecko | bitcoin | filas=304 | archivo=coingecko_btc_2024200509B.csv
+2026-11-22 00:10:09 | 01_extraccion_api | CoinGecko ethereum | intento 1 | HTTP 200 | https://api.coingecko.com/api/v3/coins/ethereum/market_chart/range?vs_currency=usd&from=1767225600&to=1793491199
+2026-11-22 00:10:10 | 01_extraccion_api | CoinGecko | ethereum | filas=304 | archivo=coingecko_eth_2024200509B.csv
+2026-11-22 00:10:11 | 01_extraccion_api | BCRPData PD04638PD | intento 1 | HTTP 200 | https://estadisticas.bcrp.gob.pe/estadisticas/series/api/PD04638PD/json/2018-01-01/2026-10-31/esp
+2026-11-22 00:10:13 | 01_extraccion_api | BCRPData | PD04638PD (tc_venta) | Tipo de cambio - TC Interbancario (S/ por US$) - Venta | filas=2305 | archivo=bcrp_PD04638PD_2024200509B.csv
+2026-11-22 00:10:14 | 01_extraccion_api | BCRPData PD12301MD | intento 1 | HTTP 200 | https://estadisticas.bcrp.gob.pe/estadisticas/series/api/PD12301MD/json/2018-01-01/2026-10-31/esp
+2026-11-22 00:10:16 | 01_extraccion_api | BCRPData | PD12301MD (tasa_referencia) | Tasas de interés - Tasa de Referencia de la Política Monetaria | filas=2305 | archivo=bcrp_PD12301MD_2024200509B.csv
+2026-11-22 00:10:16 | 01_extraccion_api | Fin de la vía 1 (API)
+2026-11-22 00:14:52 | 02_scraping_web | robots.txt | HTTP 404 | https://estadisticas.bcrp.gob.pe/robots.txt
+2026-11-22 00:14:52 | 02_scraping_web | robots.txt | no publicado: no hay restricciones declaradas
+2026-11-22 00:14:52 | 02_scraping_web | robots.txt | ¿rastreo permitido para la ruta de resultados?: True
+2026-11-22 00:14:52 | 02_scraping_web | BCRP HTML PD38026MD 2018 | intento 1 | HTTP 200 | https://estadisticas.bcrp.gob.pe/estadisticas/series/diarias/resultados/PD38026MD/html/2018-01-01/2018-12-31/
+2026-11-22 00:14:54 | 02_scraping_web | BCRP HTML PD38026MD 2018 | tablas=3 | selector=table.series tr | filas=0
+2026-11-22 00:14:55 | 02_scraping_web | BCRP HTML PD38026MD 2019 | intento 1 | HTTP 200 | https://estadisticas.bcrp.gob.pe/estadisticas/series/diarias/resultados/PD38026MD/html/2019-01-01/2019-12-31/
+2026-11-22 00:14:57 | 02_scraping_web | BCRP HTML PD38026MD 2019 | tablas=3 | selector=table.series tr | filas=0
+2026-11-22 00:14:58 | 02_scraping_web | BCRP HTML PD38026MD 2020 | intento 1 | HTTP 200 | https://estadisticas.bcrp.gob.pe/estadisticas/series/diarias/resultados/PD38026MD/html/2020-01-01/2020-12-31/
+2026-11-22 00:14:59 | 02_scraping_web | BCRP HTML PD38026MD 2020 | tablas=3 | selector=table.series tr | filas=0
+2026-11-22 00:15:00 | 02_scraping_web | BCRP HTML PD38026MD 2021 | intento 1 | HTTP 200 | https://estadisticas.bcrp.gob.pe/estadisticas/series/diarias/resultados/PD38026MD/html/2021-01-01/2021-12-31/
+2026-11-22 00:15:02 | 02_scraping_web | BCRP HTML PD38026MD 2021 | tablas=3 | selector=table.series tr | filas=0
+2026-11-22 00:15:03 | 02_scraping_web | BCRP HTML PD38026MD 2022 | intento 1 | HTTP 200 | https://estadisticas.bcrp.gob.pe/estadisticas/series/diarias/resultados/PD38026MD/html/2022-01-01/2022-12-31/
+2026-11-22 00:15:04 | 02_scraping_web | BCRP HTML PD38026MD 2022 | tablas=3 | selector=table.series tr | filas=0
+2026-11-22 00:15:05 | 02_scraping_web | BCRP HTML PD38026MD 2023 | intento 1 | HTTP 200 | https://estadisticas.bcrp.gob.pe/estadisticas/series/diarias/resultados/PD38026MD/html/2023-01-01/2023-12-31/
+2026-11-22 00:15:07 | 02_scraping_web | BCRP HTML PD38026MD 2023 | tablas=3 | selector=table.series tr | filas=0
+2026-11-22 00:15:08 | 02_scraping_web | BCRP HTML PD38026MD 2024 | intento 1 | HTTP 200 | https://estadisticas.bcrp.gob.pe/estadisticas/series/diarias/resultados/PD38026MD/html/2024-01-01/2024-12-31/
+2026-11-22 00:15:10 | 02_scraping_web | BCRP HTML PD38026MD 2024 | tablas=3 | selector=table.series tr | filas=0
+2026-11-22 00:15:11 | 02_scraping_web | BCRP HTML PD38026MD 2025 | intento 1 | HTTP 200 | https://estadisticas.bcrp.gob.pe/estadisticas/series/diarias/resultados/PD38026MD/html/2025-01-01/2025-12-31/
+2026-11-22 00:15:12 | 02_scraping_web | BCRP HTML PD38026MD 2025 | tablas=3 | selector=table.series tr | filas=0
+2026-11-22 00:15:13 | 02_scraping_web | BCRP HTML PD38026MD 2026 | intento 1 | HTTP 200 | https://estadisticas.bcrp.gob.pe/estadisticas/series/diarias/resultados/PD38026MD/html/2026-01-01/2026-10-31/
+2026-11-22 00:15:15 | 02_scraping_web | BCRP HTML PD38026MD 2026 | tablas=3 | selector=table.series tr | filas=0
+2026-11-22 00:15:15 | 02_scraping_web | BCRP HTML PD38026MD (indice_bvl) | filas totales=0 | archivo=bcrp_html_PD38026MD_2024200509B.csv
+2026-11-22 00:15:16 | 02_scraping_web | BCRP HTML PD04696MD 2018 | intento 1 | HTTP 200 | https://estadisticas.bcrp.gob.pe/estadisticas/series/diarias/resultados/PD04696MD/html/2018-01-01/2018-12-31/
+2026-11-22 00:15:17 | 02_scraping_web | BCRP HTML PD04696MD 2018 | tablas=3 | selector=table.series tr | filas=0
+2026-11-22 00:15:18 | 02_scraping_web | BCRP HTML PD04696MD 2019 | intento 1 | HTTP 200 | https://estadisticas.bcrp.gob.pe/estadisticas/series/diarias/resultados/PD04696MD/html/2019-01-01/2019-12-31/
+2026-11-22 00:15:20 | 02_scraping_web | BCRP HTML PD04696MD 2019 | tablas=3 | selector=table.series tr | filas=0
+2026-11-22 00:15:21 | 02_scraping_web | BCRP HTML PD04696MD 2020 | intento 1 | HTTP 200 | https://estadisticas.bcrp.gob.pe/estadisticas/series/diarias/resultados/PD04696MD/html/2020-01-01/2020-12-31/
+2026-11-22 00:15:23 | 02_scraping_web | BCRP HTML PD04696MD 2020 | tablas=3 | selector=table.series tr | filas=0
+2026-11-22 00:15:23 | 02_scraping_web | BCRP HTML PD04696MD 2021 | intento 1 | HTTP 200 | https://estadisticas.bcrp.gob.pe/estadisticas/series/diarias/resultados/PD04696MD/html/2021-01-01/2021-12-31/
+2026-11-22 00:15:25 | 02_scraping_web | BCRP HTML PD04696MD 2021 | tablas=3 | selector=table.series tr | filas=0
+2026-11-22 00:15:26 | 02_scraping_web | BCRP HTML PD04696MD 2022 | intento 1 | HTTP 200 | https://estadisticas.bcrp.gob.pe/estadisticas/series/diarias/resultados/PD04696MD/html/2022-01-01/2022-12-31/
+2026-11-22 00:15:27 | 02_scraping_web | BCRP HTML PD04696MD 2022 | tablas=3 | selector=table.series tr | filas=0
+2026-11-22 00:15:28 | 02_scraping_web | BCRP HTML PD04696MD 2023 | intento 1 | HTTP 200 | https://estadisticas.bcrp.gob.pe/estadisticas/series/diarias/resultados/PD04696MD/html/2023-01-01/2023-12-31/
+2026-11-22 00:15:30 | 02_scraping_web | BCRP HTML PD04696MD 2023 | tablas=3 | selector=table.series tr | filas=0
+2026-11-22 00:15:31 | 02_scraping_web | BCRP HTML PD04696MD 2024 | intento 1 | HTTP 200 | https://estadisticas.bcrp.gob.pe/estadisticas/series/diarias/resultados/PD04696MD/html/2024-01-01/2024-12-31/
+2026-11-22 00:15:32 | 02_scraping_web | BCRP HTML PD04696MD 2024 | tablas=3 | selector=table.series tr | filas=0
+2026-11-22 00:15:33 | 02_scraping_web | BCRP HTML PD04696MD 2025 | intento 1 | HTTP 200 | https://estadisticas.bcrp.gob.pe/estadisticas/series/diarias/resultados/PD04696MD/html/2025-01-01/2025-12-31/
+2026-11-22 00:15:35 | 02_scraping_web | BCRP HTML PD04696MD 2025 | tablas=3 | selector=table.series tr | filas=0
+2026-11-22 00:15:35 | 02_scraping_web | BCRP HTML PD04696MD 2026 | intento 1 | HTTP 200 | https://estadisticas.bcrp.gob.pe/estadisticas/series/diarias/resultados/PD04696MD/html/2026-01-01/2026-10-31/
+2026-11-22 00:15:37 | 02_scraping_web | BCRP HTML PD04696MD 2026 | tablas=3 | selector=table.series tr | filas=0
+2026-11-22 00:15:37 | 02_scraping_web | BCRP HTML PD04696MD (monto_negociado) | filas totales=0 | archivo=bcrp_html_PD04696MD_2024200509B.csv
+2026-11-22 00:15:37 | 02_scraping_web | Fin de la vía 2 (scraping)
+2026-11-22 00:19:40 | 02_scraping_web | robots.txt | HTTP 404 | https://estadisticas.bcrp.gob.pe/robots.txt
+2026-11-22 00:19:40 | 02_scraping_web | robots.txt | no publicado: no hay restricciones declaradas
+2026-11-22 00:19:40 | 02_scraping_web | robots.txt | ¿rastreo permitido para la ruta de resultados?: True
+2026-11-22 00:19:41 | 02_scraping_web | BCRP HTML PD38026MD 2018 | intento 1 | HTTP 200 | https://estadisticas.bcrp.gob.pe/estadisticas/series/diarias/resultados/PD38026MD/html/2018-01-01/2018-12-31/
+2026-11-22 00:19:43 | 02_scraping_web | BCRP HTML PD38026MD 2018 | tablas=3 | selector=td.periodo + td.dato | filas=261
+2026-11-22 00:19:44 | 02_scraping_web | BCRP HTML PD38026MD 2019 | intento 1 | HTTP 200 | https://estadisticas.bcrp.gob.pe/estadisticas/series/diarias/resultados/PD38026MD/html/2019-01-01/2019-12-31/
+2026-11-22 00:19:45 | 02_scraping_web | BCRP HTML PD38026MD 2019 | tablas=3 | selector=td.periodo + td.dato | filas=261
+2026-11-22 00:19:46 | 02_scraping_web | BCRP HTML PD38026MD 2020 | intento 1 | HTTP 200 | https://estadisticas.bcrp.gob.pe/estadisticas/series/diarias/resultados/PD38026MD/html/2020-01-01/2020-12-31/
+2026-11-22 00:19:48 | 02_scraping_web | BCRP HTML PD38026MD 2020 | tablas=3 | selector=td.periodo + td.dato | filas=262
+2026-11-22 00:19:49 | 02_scraping_web | BCRP HTML PD38026MD 2021 | intento 1 | HTTP 200 | https://estadisticas.bcrp.gob.pe/estadisticas/series/diarias/resultados/PD38026MD/html/2021-01-01/2021-12-31/
+2026-11-22 00:19:50 | 02_scraping_web | BCRP HTML PD38026MD 2021 | tablas=3 | selector=td.periodo + td.dato | filas=260
+2026-11-22 00:20:10 | 02_scraping_web | BCRP HTML PD38026MD 2022 | intento 1 | HTTP 200 | https://estadisticas.bcrp.gob.pe/estadisticas/series/diarias/resultados/PD38026MD/html/2022-01-01/2022-12-31/
+2026-11-22 00:20:12 | 02_scraping_web | BCRP HTML PD38026MD 2022 | tablas=3 | selector=td.periodo + td.dato | filas=260
+2026-11-22 00:20:13 | 02_scraping_web | BCRP HTML PD38026MD 2023 | intento 1 | HTTP 200 | https://estadisticas.bcrp.gob.pe/estadisticas/series/diarias/resultados/PD38026MD/html/2023-01-01/2023-12-31/
+2026-11-22 00:20:15 | 02_scraping_web | BCRP HTML PD38026MD 2023 | tablas=3 | selector=td.periodo + td.dato | filas=259
+2026-11-22 00:20:16 | 02_scraping_web | BCRP HTML PD38026MD 2024 | intento 1 | HTTP 200 | https://estadisticas.bcrp.gob.pe/estadisticas/series/diarias/resultados/PD38026MD/html/2024-01-01/2024-12-31/
+2026-11-22 00:20:17 | 02_scraping_web | BCRP HTML PD38026MD 2024 | tablas=3 | selector=td.periodo + td.dato | filas=259
+2026-11-22 00:20:18 | 02_scraping_web | BCRP HTML PD38026MD 2025 | intento 1 | HTTP 200 | https://estadisticas.bcrp.gob.pe/estadisticas/series/diarias/resultados/PD38026MD/html/2025-01-01/2025-12-31/
+2026-11-22 00:20:20 | 02_scraping_web | BCRP HTML PD38026MD 2025 | tablas=3 | selector=td.periodo + td.dato | filas=260
+2026-11-22 00:20:21 | 02_scraping_web | BCRP HTML PD38026MD 2026 | intento 1 | HTTP 200 | https://estadisticas.bcrp.gob.pe/estadisticas/series/diarias/resultados/PD38026MD/html/2026-01-01/2026-10-31/
+2026-11-22 00:20:22 | 02_scraping_web | BCRP HTML PD38026MD 2026 | tablas=3 | selector=td.periodo + td.dato | filas=215
+2026-11-22 00:20:22 | 02_scraping_web | BCRP HTML PD38026MD (indice_bvl) | filas totales=2297 | archivo=bcrp_html_PD38026MD_2024200509B.csv
+2026-11-22 00:20:23 | 02_scraping_web | BCRP HTML PD04696MD 2018 | intento 1 | HTTP 200 | https://estadisticas.bcrp.gob.pe/estadisticas/series/diarias/resultados/PD04696MD/html/2018-01-01/2018-12-31/
+2026-11-22 00:20:25 | 02_scraping_web | BCRP HTML PD04696MD 2018 | tablas=3 | selector=td.periodo + td.dato | filas=260
+2026-11-22 00:20:26 | 02_scraping_web | BCRP HTML PD04696MD 2019 | intento 1 | HTTP 200 | https://estadisticas.bcrp.gob.pe/estadisticas/series/diarias/resultados/PD04696MD/html/2019-01-01/2019-12-31/
+2026-11-22 00:20:27 | 02_scraping_web | BCRP HTML PD04696MD 2019 | tablas=3 | selector=td.periodo + td.dato | filas=261
+2026-11-22 00:20:28 | 02_scraping_web | BCRP HTML PD04696MD 2020 | intento 1 | HTTP 200 | https://estadisticas.bcrp.gob.pe/estadisticas/series/diarias/resultados/PD04696MD/html/2020-01-01/2020-12-31/
+2026-11-22 00:20:30 | 02_scraping_web | BCRP HTML PD04696MD 2020 | tablas=3 | selector=td.periodo + td.dato | filas=262
+2026-11-22 00:20:30 | 02_scraping_web | BCRP HTML PD04696MD 2021 | intento 1 | HTTP 200 | https://estadisticas.bcrp.gob.pe/estadisticas/series/diarias/resultados/PD04696MD/html/2021-01-01/2021-12-31/
+2026-11-22 00:20:32 | 02_scraping_web | BCRP HTML PD04696MD 2021 | tablas=3 | selector=td.periodo + td.dato | filas=260
+2026-11-22 00:20:33 | 02_scraping_web | BCRP HTML PD04696MD 2022 | intento 1 | HTTP 200 | https://estadisticas.bcrp.gob.pe/estadisticas/series/diarias/resultados/PD04696MD/html/2022-01-01/2022-12-31/
+2026-11-22 00:20:34 | 02_scraping_web | BCRP HTML PD04696MD 2022 | tablas=3 | selector=td.periodo + td.dato | filas=260
+2026-11-22 00:20:35 | 02_scraping_web | BCRP HTML PD04696MD 2023 | intento 1 | HTTP 200 | https://estadisticas.bcrp.gob.pe/estadisticas/series/diarias/resultados/PD04696MD/html/2023-01-01/2023-12-31/
+2026-11-22 00:20:37 | 02_scraping_web | BCRP HTML PD04696MD 2023 | tablas=3 | selector=td.periodo + td.dato | filas=259
+2026-11-22 00:20:38 | 02_scraping_web | BCRP HTML PD04696MD 2024 | intento 1 | HTTP 200 | https://estadisticas.bcrp.gob.pe/estadisticas/series/diarias/resultados/PD04696MD/html/2024-01-01/2024-12-31/
+2026-11-22 00:20:39 | 02_scraping_web | BCRP HTML PD04696MD 2024 | tablas=3 | selector=td.periodo + td.dato | filas=259
+2026-11-22 00:20:40 | 02_scraping_web | BCRP HTML PD04696MD 2025 | intento 1 | HTTP 200 | https://estadisticas.bcrp.gob.pe/estadisticas/series/diarias/resultados/PD04696MD/html/2025-01-01/2025-12-31/
+2026-11-22 00:20:42 | 02_scraping_web | BCRP HTML PD04696MD 2025 | tablas=3 | selector=td.periodo + td.dato | filas=260
+2026-11-22 00:20:43 | 02_scraping_web | BCRP HTML PD04696MD 2026 | intento 1 | HTTP 200 | https://estadisticas.bcrp.gob.pe/estadisticas/series/diarias/resultados/PD04696MD/html/2026-01-01/2026-10-31/
+2026-11-22 00:20:44 | 02_scraping_web | BCRP HTML PD04696MD 2026 | tablas=3 | selector=td.periodo + td.dato | filas=215
+2026-11-22 00:20:44 | 02_scraping_web | BCRP HTML PD04696MD (monto_negociado) | filas totales=2296 | archivo=bcrp_html_PD04696MD_2024200509B.csv
+2026-11-22 00:20:45 | 02_scraping_web | Fin de la vía 2 (scraping)
+2026-11-22 00:25:01 | 03_limpieza_datos | Inicio de la limpieza
+2026-11-22 00:25:01 | 03_limpieza_datos | yahoo_btc_usd_2024200509B.csv | filas=3226 | precios vacíos=0
+2026-11-22 00:25:01 | 03_limpieza_datos | yahoo_eth_usd_2024200509B.csv | filas=3226 | precios vacíos=0
+2026-11-22 00:25:01 | 03_limpieza_datos | coingecko_btc_2024200509B.csv | filas=304 | se fecha como cierre del día anterior
+2026-11-22 00:25:01 | 03_limpieza_datos | coingecko_eth_2024200509B.csv | filas=304 | se fecha como cierre del día anterior
+2026-11-22 00:25:01 | 03_limpieza_datos | bcrp_PD04638PD_2024200509B.csv | filas=2305 | con dato=2200 | n.d.=105
+2026-11-22 00:25:01 | 03_limpieza_datos | bcrp_PD12301MD_2024200509B.csv | filas=2305 | con dato=2202 | n.d.=103
+2026-11-22 00:25:01 | 03_limpieza_datos | bcrp_html_PD38026MD_2024200509B.csv | filas=2297 | con dato=2231 | n.d.=66
+2026-11-22 00:25:01 | 03_limpieza_datos | bcrp_html_PD04696MD_2024200509B.csv | filas=2296 | con dato=2225 | n.d.=71
+2026-11-22 00:25:01 | 03_limpieza_datos | Unión por fecha | filas=3226 (días calendario 2018-01-01 a 2026-10-31)
+2026-11-22 00:25:01 | 03_limpieza_datos | Días con índice BVL pero sin monto negociado: 7 ['2018-01-01', '2018-03-29', '2018-03-30', '2018-05-01', '2018-08-30', '2018-11-01', '2018-12-25']
+2026-11-22 00:25:01 | 03_limpieza_datos | Días hábiles con índice BVL idéntico al anterior: 18
+2026-11-22 00:25:01 | 03_limpieza_datos | TC y tasa rellenados con el último valor vigente: 1024 días | quedan vacíos al inicio: 2
+2026-11-22 00:25:01 | 03_limpieza_datos | Atípicos | BTC (USD, diario) | 62 de 3225 (1.92%) | más extremos: 2020-03-12: -46.47%, 2018-01-16: -18.46%, 2022-06-13: -17.41%
+2026-11-22 00:25:01 | 03_limpieza_datos | Atípicos | ETH (USD, diario) | 42 de 3225 (1.30%) | más extremos: 2020-03-12: -55.07%, 2021-05-19: -31.75%, 2021-01-03: +23.07%
+2026-11-22 00:25:01 | 03_limpieza_datos | Atípicos | Índice BVL (días hábiles) | 34 de 2223 (1.53%) | más extremos: 2024-06-24: +28.87%, 2024-06-21: -28.20%, 2020-03-12: -11.01%
+2026-11-22 00:25:01 | 03_limpieza_datos | Atípicos | TC venta (días hábiles) | 28 de 2222 (1.26%) | más extremos: 2026-06-09: -3.48%, 2021-07-30: +3.30%, 2021-06-30: -2.94%
+2026-11-22 00:25:01 | 03_limpieza_datos | Guardado datos_procesados_2024200509B.csv | filas=3226 | columnas=17 | SHA-256=3bbe1a656d0e6ca0d0ee04b2318e56dd821531624cd59d4507315da634767eba
+2026-11-22 00:25:01 | 03_limpieza_datos | Fin de la limpieza
+2026-11-22 00:31:15 | 03_limpieza_datos | Inicio de la limpieza
+2026-11-22 00:31:15 | 03_limpieza_datos | yahoo_btc_usd_2024200509B.csv | filas=3226 | precios vacíos=0
+2026-11-22 00:31:15 | 03_limpieza_datos | yahoo_eth_usd_2024200509B.csv | filas=3226 | precios vacíos=0
+2026-11-22 00:31:15 | 03_limpieza_datos | coingecko_btc_2024200509B.csv | filas=304 | se fecha como cierre del día anterior
+2026-11-22 00:31:15 | 03_limpieza_datos | coingecko_eth_2024200509B.csv | filas=304 | se fecha como cierre del día anterior
+2026-11-22 00:31:15 | 03_limpieza_datos | bcrp_PD04638PD_2024200509B.csv | filas=2305 | con dato=2200 | n.d.=105
+2026-11-22 00:31:15 | 03_limpieza_datos | bcrp_PD12301MD_2024200509B.csv | filas=2305 | con dato=2202 | n.d.=103
+2026-11-22 00:31:15 | 03_limpieza_datos | bcrp_html_PD38026MD_2024200509B.csv | filas=2297 | con dato=2231 | n.d.=66
+2026-11-22 00:31:15 | 03_limpieza_datos | bcrp_html_PD04696MD_2024200509B.csv | filas=2296 | con dato=2225 | n.d.=71
+2026-11-22 00:31:15 | 03_limpieza_datos | Unión por fecha | filas=3226 (días calendario 2018-01-01 a 2026-10-31)
+2026-11-22 00:31:15 | 03_limpieza_datos | Días con índice BVL pero sin monto (feriados): 7 | con monto = 0 (feriados): 17 -> no son días hábiles
+2026-11-22 00:31:15 | 03_limpieza_datos | Días hábiles con índice BVL idéntico al anterior: 1 ['2020-04-23']
+2026-11-22 00:31:15 | 03_limpieza_datos | TC y tasa rellenados con el último valor vigente: 1024 días | quedan vacíos al inicio: 2
+2026-11-22 00:31:15 | 03_limpieza_datos | Dato anómalo de la fuente | 2024-06-21 | índice=22521.0 | retorno=-28.20% | retorno del día hábil siguiente=+28.87% | se marca anomalo_bvl=1
+2026-11-22 00:31:15 | 03_limpieza_datos | Días marcados como anomalo_bvl: 1
+2026-11-22 00:31:15 | 03_limpieza_datos | Atípicos | BTC (USD, diario) | 62 de 3225 (1.92%) | más extremos: 2020-03-12: -46.47%, 2018-01-16: -18.46%, 2022-06-13: -17.41%
+2026-11-22 00:31:15 | 03_limpieza_datos | Atípicos | ETH (USD, diario) | 42 de 3225 (1.30%) | más extremos: 2020-03-12: -55.07%, 2021-05-19: -31.75%, 2021-01-03: +23.07%
+2026-11-22 00:31:15 | 03_limpieza_datos | Atípicos | Índice BVL (días hábiles) | 32 de 2205 (1.45%) | más extremos: 2020-03-12: -11.01%, 2021-06-07: -8.06%, 2020-11-10: -6.73%
+2026-11-22 00:31:15 | 03_limpieza_datos | Atípicos | TC venta (días hábiles) | 25 de 2204 (1.13%) | más extremos: 2026-06-09: -3.48%, 2021-07-30: +3.30%, 2021-06-30: -2.94%
+2026-11-22 00:31:15 | 03_limpieza_datos | Guardado datos_procesados_2024200509B.csv | filas=3226 | columnas=18 | SHA-256=c1e2504a87ccb14cd803032c12a488c9c29aaf63c8f129f8209a07f716b0460a
+2026-11-22 00:31:15 | 03_limpieza_datos | Fin de la limpieza
+2026-11-22 00:37:27 | 04_analisis | Inicio del análisis
+2026-11-22 00:37:27 | 04_analisis | SHA-256 de la base: c1e2504a87ccb14cd803032c12a488c9c29aaf63c8f129f8209a07f716b0460a | coincide con hash_sha256.txt: True
+2026-11-22 00:37:27 | 04_analisis | Muestra común: 2204 retornos | 2018-01-04 a 2026-10-30 | 8.82 años | factor de anualización = 249.93 obs/año
+2026-11-22 00:37:27 | 04_analisis | Tabla guardada: tabla1_descriptivos.csv | filas=6
+2026-11-22 00:37:27 | 04_analisis | Tabla guardada: tabla2_riesgo_retorno.csv | filas=6
+2026-11-22 00:37:27 | 04_analisis | Tabla guardada: tabla3_correlaciones.csv | filas=6
+2026-11-22 00:37:27 | 04_analisis | Tabla guardada: tabla4_capm.csv | filas=2
+2026-11-22 00:37:27 | 04_analisis | Tabla guardada: tabla5_beta_subperiodos.csv | filas=8
+2026-11-22 00:37:27 | 04_analisis | Tabla guardada: tabla6_diversificacion.csv | filas=12
+2026-11-22 00:37:27 | 04_analisis | Tabla guardada: tabla7_validacion_coingecko.csv | filas=2
+2026-11-22 00:37:27 | 04_analisis | Tabla guardada: tabla8_liquidez_anual.csv | filas=9
+2026-11-22 00:37:27 | 04_analisis | Tabla guardada: tabla9_igualdad_varianzas.csv | filas=3
+2026-11-22 00:37:28 | 04_analisis | Figura guardada: figura1_precios_base100.png
+2026-11-22 00:37:28 | 04_analisis | Figura guardada: figura2_volatilidad_movil.png
+2026-11-22 00:37:29 | 04_analisis | Figura guardada: figura3_correlacion_movil.png
+2026-11-22 00:37:30 | 04_analisis | Figura guardada: figura4_distribucion_retornos.png
+2026-11-22 00:37:30 | 04_analisis | Figura guardada: figura5_beta_movil.png
+2026-11-22 00:37:30 | 04_analisis | Figura guardada: figura6_drawdown.png
+2026-11-22 00:37:31 | 04_analisis | Figura guardada: figura7_validacion_coingecko.png
+2026-11-22 00:37:31 | 04_analisis | Fin del análisis
+2026-11-22 01:12:13 | 04_analisis | Inicio del análisis
+2026-11-22 01:12:13 | 04_analisis | SHA-256 de la base: c1e2504a87ccb14cd803032c12a488c9c29aaf63c8f129f8209a07f716b0460a | coincide con hash_sha256.txt: True
+2026-11-22 01:12:13 | 04_analisis | Muestra común: 2204 retornos | 2018-01-04 a 2026-10-30 | 8.82 años | factor de anualización = 249.93 obs/año
+2026-11-22 01:12:15 | 04_analisis | Tabla guardada: tabla1_descriptivos.csv | filas=6
+2026-11-22 01:12:15 | 04_analisis | Tabla guardada: tabla2_riesgo_retorno.csv | filas=6
+2026-11-22 01:12:15 | 04_analisis | Tabla guardada: tabla3_correlaciones.csv | filas=6
+2026-11-22 01:12:15 | 04_analisis | Tabla guardada: tabla4_capm.csv | filas=2
+2026-11-22 01:12:15 | 04_analisis | Tabla guardada: tabla5_beta_subperiodos.csv | filas=8
+2026-11-22 01:12:15 | 04_analisis | Tabla guardada: tabla6_diversificacion.csv | filas=12
+2026-11-22 01:12:15 | 04_analisis | Tabla guardada: tabla7_validacion_coingecko.csv | filas=2
+2026-11-22 01:12:15 | 04_analisis | Tabla guardada: tabla8_liquidez_anual.csv | filas=9
+2026-11-22 01:12:15 | 04_analisis | Tabla guardada: tabla9_igualdad_varianzas.csv | filas=3
+2026-11-22 01:12:19 | 04_analisis | Figura guardada: figura1_precios_base100.png y figura1_precios_base100.pdf
+2026-11-22 01:12:20 | 04_analisis | Figura guardada: figura2_volatilidad_movil.png y figura2_volatilidad_movil.pdf
+2026-11-22 01:12:21 | 04_analisis | Figura guardada: figura3_correlacion_movil.png y figura3_correlacion_movil.pdf
+2026-11-22 01:12:22 | 04_analisis | Figura guardada: figura4_distribucion_retornos.png y figura4_distribucion_retornos.pdf
+2026-11-22 01:12:23 | 04_analisis | Figura guardada: figura5_beta_movil.png y figura5_beta_movil.pdf
+2026-11-22 01:12:25 | 04_analisis | Figura guardada: figura6_drawdown.png y figura6_drawdown.pdf
+2026-11-22 01:12:27 | 04_analisis | Figura guardada: figura7_validacion_coingecko.png y figura7_validacion_coingecko.pdf
+2026-11-22 01:12:28 | 04_analisis | Figura guardada: figura8_diversificacion.png y figura8_diversificacion.pdf
+2026-11-22 01:12:28 | 04_analisis | Fin del análisis
+2026-11-22 01:16:59 | 04_analisis | Inicio del análisis
+2026-11-22 01:16:59 | 04_analisis | SHA-256 de la base: c1e2504a87ccb14cd803032c12a488c9c29aaf63c8f129f8209a07f716b0460a | coincide con hash_sha256.txt: True
+2026-11-22 01:16:59 | 04_analisis | Muestra común: 2204 retornos | 2018-01-04 a 2026-10-30 | 8.82 años | factor de anualización = 249.93 obs/año
+2026-11-22 01:16:59 | 04_analisis | Tabla guardada: tabla1_descriptivos.csv | filas=6
+2026-11-22 01:16:59 | 04_analisis | Tabla guardada: tabla2_riesgo_retorno.csv | filas=6
+2026-11-22 01:16:59 | 04_analisis | Tabla guardada: tabla3_correlaciones.csv | filas=6
+2026-11-22 01:16:59 | 04_analisis | Tabla guardada: tabla4_capm.csv | filas=2
+2026-11-22 01:16:59 | 04_analisis | Tabla guardada: tabla5_beta_subperiodos.csv | filas=8
+2026-11-22 01:16:59 | 04_analisis | Tabla guardada: tabla6_diversificacion.csv | filas=12
+2026-11-22 01:16:59 | 04_analisis | Tabla guardada: tabla7_validacion_coingecko.csv | filas=2
+2026-11-22 01:16:59 | 04_analisis | Tabla guardada: tabla8_liquidez_anual.csv | filas=9
+2026-11-22 01:16:59 | 04_analisis | Tabla guardada: tabla9_igualdad_varianzas.csv | filas=3
+2026-11-22 01:17:00 | 04_analisis | Figura guardada: figura1_precios_base100.png y figura1_precios_base100.pdf
+2026-11-22 01:17:01 | 04_analisis | Figura guardada: figura2_volatilidad_movil.png y figura2_volatilidad_movil.pdf
+2026-11-22 01:17:02 | 04_analisis | Figura guardada: figura3_correlacion_movil.png y figura3_correlacion_movil.pdf
+2026-11-22 01:17:03 | 04_analisis | Figura guardada: figura4_distribucion_retornos.png y figura4_distribucion_retornos.pdf
+2026-11-22 01:17:03 | 04_analisis | Figura guardada: figura5_beta_movil.png y figura5_beta_movil.pdf
+2026-11-22 01:17:05 | 04_analisis | Figura guardada: figura6_drawdown.png y figura6_drawdown.pdf
+2026-11-22 01:17:05 | 04_analisis | Figura guardada: figura7_validacion_coingecko.png y figura7_validacion_coingecko.pdf
+2026-11-22 01:17:06 | 04_analisis | Figura guardada: figura8_diversificacion.png y figura8_diversificacion.pdf
+2026-11-22 01:17:06 | 04_analisis | Fin del análisis
