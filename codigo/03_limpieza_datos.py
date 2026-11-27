@@ -1,7 +1,7 @@
 # Autor: Andy Donato Mendoza Flores
 # Código de matrícula: 2024200509B
 # Tema 72 del temario (Unidad II): Riesgo de los criptoactivos frente a los activos financieros peruanos
-# Fecha de extracción: 2026-11-22
+# Fecha de extracción: 2026-11-22 (índice y monto BVL) · 2026-11-26 (tipo de cambio por scraping)
 """
 03_limpieza_datos.py  ·  DEPURACIÓN Y UNIÓN DE LAS FUENTES
 
@@ -21,6 +21,10 @@ Qué hace este script:
      Excepción: un salto del índice BVL que se revierte al día siguiente es
      un dato erróneo de la fuente; se marca con anomalo_bvl = 1 (sin borrarlo).
   6. Guarda /datos_procesados/datos_procesados_2024200509B.csv y su hash SHA-256.
+
+  El tipo de cambio llega por las dos vías: tc_venta (API, con más decimales) se
+  usa en el análisis; tc_venta_html (scraping, 3 decimales como en la web) se
+  conserva sin rellenar, para validar que ambas vías coinciden.
 """
 
 # ---------------------------------------------------------------------------
@@ -160,6 +164,7 @@ tasa = leer_bcrp(f"bcrp_PD12301MD_{CODIGO_MATRICULA}.csv", "tasa_referencia")
 # 4.4 Vía scraping: páginas web de BCRPData (Bolsa de Valores de Lima)
 bvl = leer_bcrp(f"bcrp_html_PD38026MD_{CODIGO_MATRICULA}.csv", "indice_bvl")
 monto = leer_bcrp(f"bcrp_html_PD04696MD_{CODIGO_MATRICULA}.csv", "monto_negociado_bvl")
+tc_html = leer_bcrp(f"bcrp_html_PD04638PD_{CODIGO_MATRICULA}.csv", "tc_venta_html")
 
 
 # ---------------------------------------------------------------------------
@@ -167,7 +172,7 @@ monto = leer_bcrp(f"bcrp_html_PD04696MD_{CODIGO_MATRICULA}.csv", "monto_negociad
 # ---------------------------------------------------------------------------
 calendario = pd.DataFrame({"fecha": pd.date_range(FECHA_INICIO, FECHA_CORTE, freq="D")})
 base = calendario
-for tabla in [btc, eth, tc, tasa, bvl, monto, cg_btc, cg_eth]:
+for tabla in [btc, eth, tc, tasa, bvl, monto, cg_btc, cg_eth, tc_html]:
     base = base.merge(tabla, on="fecha", how="left")
 
 # Control: solo se conserva el periodo declarado.
@@ -252,7 +257,7 @@ for nombre, r in retornos.items():
 # ---------------------------------------------------------------------------
 columnas = ["fecha", "dia_habil_bvl",
             "precio_btc_usd", "precio_eth_usd", "volumen_btc_usd", "volumen_eth_usd",
-            "tc_venta", "tasa_referencia", "imputado_bcrp",
+            "tc_venta", "tc_venta_html", "tasa_referencia", "imputado_bcrp",
             "precio_btc_pen", "precio_eth_pen",
             "indice_bvl", "monto_negociado_bvl", "anomalo_bvl",
             "precio_btc_cg_usd", "cap_mercado_btc_usd",
@@ -290,4 +295,10 @@ for alias in ["btc", "eth"]:
     print(f"\n{alias.upper()}: Yahoo vs CoinGecko | días={len(par)} | "
           f"diferencia absoluta media={dif.mean():.3%} | máxima={dif.max():.3%} | "
           f"correlación={par.corr().iloc[0, 1]:.5f}")
+# Validación cruzada del tipo de cambio: API (tc_venta) vs scraping (tc_venta_html).
+# Solo días con dato propio en ambas vías (sin los días rellenados).
+par = base.loc[base["imputado_bcrp"] == 0, ["tc_venta", "tc_venta_html"]].dropna()
+dif_tc = (par["tc_venta"] - par["tc_venta_html"]).abs()
+escribir_log(f"TC API vs scraping | días={len(par)} | dentro del redondeo a 3 decimales (<= 0.0005)="
+             f"{int((dif_tc <= 0.0005 + 1e-9).sum())} | diferencia máxima={dif_tc.max():.6f}")
 escribir_log("Fin de la limpieza")

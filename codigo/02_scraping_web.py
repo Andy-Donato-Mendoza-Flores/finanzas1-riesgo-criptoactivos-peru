@@ -1,16 +1,22 @@
 # Autor: Andy Donato Mendoza Flores
 # Código de matrícula: 2024200509B
 # Tema 72 del temario (Unidad II): Riesgo de los criptoactivos frente a los activos financieros peruanos
-# Fecha de extracción: 2026-11-22
+# Fecha de extracción: 2026-11-22 (índice y monto BVL) · 2026-11-26 (tipo de cambio)
 """
 02_scraping_web.py  ·  VÍA 2: WEB SCRAPING
 
 Qué hace este script:
   Rastrea las páginas HTML de resultados de BCRPData (portal web del BCRP) y
-  extrae, con BeautifulSoup, la tabla de datos de dos series diarias de la
-  Bolsa de Valores de Lima:
-    - PD38026MD: Índice General Bursátil BVL (nivel del índice)
-    - PD04696MD: Monto negociado en acciones (millones de S/)
+  extrae, con BeautifulSoup, la tabla de datos de tres series diarias:
+    - PD38026MD: índice S&P/BVL Perú General (antes IGBVL), nivel del índice
+    - PD04696MD: Monto negociado en acciones de la BVL (millones de S/)
+    - PD04638PD: Tipo de cambio interbancario, venta (S/ por US$). Esta serie
+      también se obtiene por la API en 01_extraccion_api.py: así el tipo de
+      cambio llega por las dos vías y se comparan los valores.
+
+  Uso:
+    python codigo/02_scraping_web.py              -> rastrea las tres series
+    python codigo/02_scraping_web.py PD04638PD    -> rastrea solo las series indicadas
 
   Paginación: el periodo se pide año por año (una página por año y serie),
   con una pausa entre solicitudes para no cargar el servidor.
@@ -27,6 +33,7 @@ Evidencia que se guarda en /datos_crudos (sin editar):
 # Bloque 1. Librerías
 # ---------------------------------------------------------------------------
 import re
+import sys
 import time
 from datetime import datetime
 from pathlib import Path
@@ -45,9 +52,17 @@ FECHA_INICIO = "2018-01-01"
 FECHA_CORTE = "2026-10-31"
 
 SERIES_HTML = {
-    "PD38026MD": "indice_bvl",       # Índice General Bursátil BVL (índice)
+    "PD38026MD": "indice_bvl",       # Índice S&P/BVL Perú General (antes IGBVL)
     "PD04696MD": "monto_negociado",  # Monto negociado en acciones (millones S/)
+    "PD04638PD": "tc_venta_html",    # Tipo de cambio interbancario venta (S/ por US$)
 }
+
+# Series a rastrear en esta ejecución: todas, o solo las que se indiquen al llamar
+# al script (por ejemplo: python codigo/02_scraping_web.py PD04638PD)
+SERIES_A_RASTREAR = [s.upper() for s in sys.argv[1:]] or list(SERIES_HTML)
+desconocidas = [s for s in SERIES_A_RASTREAR if s not in SERIES_HTML]
+if desconocidas:
+    raise SystemExit(f"Series no declaradas en SERIES_HTML: {desconocidas}")
 
 DOMINIO = "https://estadisticas.bcrp.gob.pe"
 PLANTILLA_URL = DOMINIO + "/estadisticas/series/diarias/resultados/{codigo}/html/{inicio}/{fin}/"
@@ -164,8 +179,10 @@ if not permitido:
 # ---------------------------------------------------------------------------
 # Bloque 5. Rastreo página por página (serie × año)
 # ---------------------------------------------------------------------------
+escribir_log(f"Series a rastrear en esta ejecución: {SERIES_A_RASTREAR}")
 resumen = []
-for codigo, alias in SERIES_HTML.items():
+for codigo in SERIES_A_RASTREAR:
+    alias = SERIES_HTML[codigo]
     filas_serie = []
     for año, ini, fin in paginas_por_año(FECHA_INICIO, FECHA_CORTE):
         url = PLANTILLA_URL.format(codigo=codigo, inicio=ini, fin=fin)
@@ -206,7 +223,7 @@ for codigo, alias in SERIES_HTML.items():
 # ---------------------------------------------------------------------------
 print("\n============== RESUMEN DE LA VÍA 2 (SCRAPING) ==============")
 print(pd.DataFrame(resumen).to_string(index=False))
-for codigo in SERIES_HTML:
+for codigo in SERIES_A_RASTREAR:
     archivo = DIR_CRUDOS / f"bcrp_html_{codigo}_{CODIGO_MATRICULA}.csv"
     df = pd.read_csv(archivo)
     print(f"\n--- {archivo.name} ---")
